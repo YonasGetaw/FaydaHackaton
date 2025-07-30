@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critical Thinking - Brain Teasers</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Brain Teasers</h1>
+            <h2 id="subtitle">Challenge Your Mind</h2>
+            <button id="language-toggle">አማርኛ / Amharic</button>
+        </header>
+
+        <main>
+            <div class="teaser-container">
+                <div class="teaser-card">
+                    <h3 id="teaser1-title">Riddle #1</h3>
+                    <p class="teaser-question" id="teaser1-question">I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?</p>
+                    <button class="show-answer" id="show-answer1">Show Answer</button>
+                    <p class="answer hidden" id="teaser1-answer">An echo</p>
+                </div>
+
+                <div class="teaser-card">
+                    <h3 id="teaser2-title">Riddle #2</h3>
+                    <p class="teaser-question" id="teaser2-question">The more you take, the more you leave behind. What am I?</p>
+                    <button class="show-answer" id="show-answer2">Show Answer</button>
+                    <p class="answer hidden" id="teaser2-answer">Footsteps</p>
+                </div>
+
+                <div class="teaser-card">
+                    <h3 id="teaser3-title">Riddle #3</h3>
+                    <p class="teaser-question" id="teaser3-question">What has keys but can't open locks, has space but no room, and you can enter but not go in?</p>
+                    <button class="show-answer" id="show-answer3">Show Answer</button>
+                    <p class="answer hidden" id="teaser3-answer">A keyboard</p>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="new-teaser" id="new-teaser">New Teaser</button>
+                <button class="hint-btn" id="hint-btn">Get Hint</button>
+            </div>
+        </main>
+        <footer>
+            <p id="more-challenges">More challenges: 
+                <a href="#" class="footer-link" id="decision-link">Decision Making</a> | 
+                <a href="#" class="footer-link" id="puzzle-link">Logical Puzzles</a>
+            </p>
+            <p id="footer-text">Develop your critical thinking skills</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

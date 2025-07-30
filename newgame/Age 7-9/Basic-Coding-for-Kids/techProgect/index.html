@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Projects for Kids</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Tech Projects</h1>
+        <button id="langBtn" class="btn">በአማርኛ</button>
+    </header>
+    <main>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="beginner">Beginner</button>
+            <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+        </div>
+
+        <div class="projects-container" id="projectsContainer">
+            <!-- Projects will be added by JavaScript -->
+        </div>
+
+        <div class="project-details" id="projectDetails">
+            <div class="details-content">
+                <h2 id="detailsTitle">Project Title</h2>
+                <p id="detailsDesc">Project description goes here</p>
+                <div class="materials">
+                    <h3 id="materialsTitle">Materials Needed:</h3>
+                    <ul id="materialsList"></ul>
+                </div>
+                <button id="closeDetails" class="btn">Close</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>

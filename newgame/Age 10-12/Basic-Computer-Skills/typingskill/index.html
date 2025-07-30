@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Skills</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Typing Skills</h1>
+            <h2>Improve Your Speed and Accuracy</h2>
+        </header>
+
+        <main>
+            <div class="typing-test">
+                <div class="instructions">
+                    <h3>Typing Test</h3>
+                    <p>Type the text below as quickly and accurately as possible.</p>
+                </div>
+                
+                <div class="sample-text">
+                    The quick brown fox jumps over the lazy dog. This sentence contains all letters in the English alphabet.
+                </div>
+                
+                <textarea class="typing-area" placeholder="Start typing here..."></textarea>
+                
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-value" id="wpm">0</span>
+                        <span class="stat-label">WPM</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="accuracy">0</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="time">60</span>
+                        <span class="stat-label">Seconds</span>
+                    </div>
+                </div>
+                
+                <button class="start-btn">Start Test</button>
+                <button class="reset-btn">Reset</button>
+            </div>
+            
+            <div class="typing-tips">
+                <h3>Typing Tips</h3>
+                <ul>
+                    <li>Keep your fingers on the home row (ASDF JKL;)</li>
+                    <li>Use all fingers, not just a few</li>
+                    <li>Look at the screen, not the keyboard</li>
+                    <li>Practice daily for best results</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>More resources: 
+                <a href="#" class="footer-link">Typing Games</a> | 
+                <a href="#" class="footer-link">Keyboarding Drills</a>
+            </p>
+            <p>Made with ❤️ for faster typists</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

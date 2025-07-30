@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Experiments</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Fun Science Experiments</h1>
+        <button id="langToggle" class="lang-btn">አማርኛ</button>
+    </header>
+    
+    <main>
+        <section>
+            <h2 id="section1">Easy Home Experiments</h2>
+            <p id="content1">These simple experiments use common household items to demonstrate scientific principles.</p>
+            
+            <div class="experiments-grid">
+                <div class="experiment-card">
+                    <h3 id="exp1">Volcano Eruption</h3>
+                    <p id="content2">Create a chemical reaction with baking soda and vinegar.</p>
+                    <button class="show-btn" data-target="volcano">Show Details</button>
+                    <div id="volcano" class="exp-details">
+                        <h4 id="materials1">Materials:</h4>
+                        <ul>
+                            <li>Baking soda</li>
+                            <li>Vinegar</li>
+                            <li>Dish soap</li>
+                            <li>Food coloring</li>
+                            <li>Small bottle</li>
+                        </ul>
+                        <h4 id="steps1">Steps:</h4>
+                        <ol>
+                            <li>Place the bottle on a tray.</li>
+                            <li>Add 2 tbsp baking soda, 1 tsp dish soap and food coloring.</li>
+                            <li>Pour in vinegar and watch the eruption!</li>
+                        </ol>
+                        <p id="explanation1">The acid (vinegar) and base (baking soda) react to produce carbon dioxide gas, creating the eruption.</p>
+                    </div>
+                </div>
+                
+                <div class="experiment-card">
+                    <h3 id="exp2">Rainbow Milk</h3>
+                    <p id="content3">Explore surface tension with milk, food coloring and soap.</p>
+                    <button class="show-btn" data-target="milk">Show Details</button>
+                    <div id="milk" class="exp-details">
+                        <h4 id="materials2">Materials:</h4>
+                        <ul>
+                            <li>Milk (whole works best)</li>
+                            <li>Food coloring</li>
+                            <li>Dish soap</li>
+                            <li>Cotton swabs</li>
+                            <li>Shallow dish</li>
+                        </ul>
+                        <h4 id="steps2">Steps:</h4>
+                        <ol>
+                            <li>Pour milk into the dish to cover the bottom.</li>
+                            <li>Add drops of different food coloring.</li>
+                            <li>Dip cotton swab in soap and touch the milk.</li>
+                            <li>Watch the colors swirl!</li>
+                        </ol>
+                        <p id="explanation2">Soap breaks the surface tension of milk and reacts with fat molecules, causing the movement.</p>
+                    </div>
+                </div>
+                
+                <div class="experiment-card">
+                    <h3 id="exp3">Balloon Rocket</h3>
+                    <p id="content4">Demonstrate Newton's Third Law of Motion.</p>
+                    <button class="show-btn" data-target="rocket">Show Details</button>
+                    <div id="rocket" class="exp-details">
+                        <h4 id="materials3">Materials:</h4>
+                        <ul>
+                            <li>Balloon</li>
+                            <li>String</li>
+                            <li>Straw</li>
+                            <li>Tape</li>
+                        </ul>
+                        <h4 id="steps3">Steps:</h4>
+                        <ol>
+                            <li>Thread string through straw and tie between two chairs.</li>
+                            <li>Blow up balloon (don't tie) and tape to straw.</li>
+                            <li>Let go and watch it zoom!</li>
+                        </ol>
+                        <p id="explanation3">Air rushing out pushes the balloon forward (action) which creates an equal opposite force (reaction).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2 id="section2">Experiment Simulator</h2>
+            <p id="content5">Try this virtual density experiment with different liquids.</p>
+            <div class="simulator">
+                <div class="liquid-selector">
+                    <label for="liquid1" id="liquidLabel1">Liquid 1:</label>
+                    <select id="liquid1">
+                        <option value="honey">Honey</option>
+                        <option value="syrup">Maple Syrup</option>
+                        <option value="dishsoap">Dish Soap</option>
+                        <option value="water">Water</option>
+                        <option value="oil">Vegetable Oil</option>
+                        <option value="alcohol">Rubbing Alcohol</option>
+                    </select>
+                    
+                    <label for="liquid2" id="liquidLabel2">Liquid 2:</label>
+                    <select id="liquid2">
+                        <option value="syrup">Maple Syrup</option>
+                        <option value="dishsoap">Dish Soap</option>
+                        <option value="water">Water</option>
+                        <option value="oil">Vegetable Oil</option>
+                        <option value="alcohol">Rubbing Alcohol</option>
+                        <option value="honey">Honey</option>
+                    </select>
+                    
+                    <button id="pourBtn" class="sim-btn">Pour Together</button>
+                </div>
+                <div id="simulation" class="sim-area"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p id="footerText">Always perform experiments with adult supervision and follow safety guidelines.</p>
+        <a href="#" id="moreLink">More Safety Tips</a>
+    </footer>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

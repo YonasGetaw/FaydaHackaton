@@ -1,0 +1,198 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+  background: #FFFFFF;
+  color: #000000;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  background: #4CAF50;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+}
+
+/* Navigation Menu */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.menu button {
+  background: #4CAF50;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.menu button:hover {
+  transform: translateY(-2px);
+}
+
+/* Content Sections */
+.content {
+  display: none;
+  background: #F8F9FA;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+.content.active {
+  display: block;
+}
+
+/* Computer Parts Section */
+.parts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.part-card {
+  background: #E8F5E9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.part-card:hover {
+  background: #C8E6C9;
+  transform: scale(1.05);
+}
+
+.info-box {
+  background: #DCEDC8;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* Password Game Section */
+.password-game {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#password-input {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+#password-strength {
+  display: grid;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.requirement {
+  padding: 0.8rem;
+  border-radius: 6px;
+  background: #F1F8E9;
+}
+
+.requirement.unmet {
+  background: #FFEBEE;
+  color: #B71C1C;
+}
+
+.check-btn {
+  background: #4CAF50;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+#password-result {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Drag & Drop Section */
+.drag-game {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.drag-area, .drop-area {
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+#draggable-file {
+  background: #E8F5E9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  cursor: grab;
+}
+
+.drop-area {
+  border: 3px dashed #4CAF50;
+  width: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu {
+      grid-template-columns: 1fr;
+  }
+  
+  .drag-game {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .content {
+      padding: 1rem;
+  }
+  
+  h1 {
+      font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .part-card {
+      padding: 1rem;
+      font-size: 0.9rem;
+  }
+  
+  #password-input {
+      font-size: 1rem;
+  }
+}

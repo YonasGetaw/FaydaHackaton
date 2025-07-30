@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition & Subtraction</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Addition & Subtraction</h1>
+        <button id="langBtn" class="btn">በአማርኛ</button>
+    </header>
+
+    <main>
+        <div class="game-container">
+            <div class="problem" id="problem">
+                <span id="num1">5</span>
+                <span id="operator">+</span>
+                <span id="num2">3</span>
+                <span>=</span>
+                <input type="number" id="answer" placeholder="?">
+            </div>
+
+            <div class="controls">
+                <button id="checkBtn" class="btn">Check</button>
+                <button id="newBtn" class="btn">New Problem</button>
+            </div>
+
+            <div class="score">
+                <p id="score">Score: 0</p>
+            </div>
+
+            <div class="settings">
+                <label>
+                    <input type="radio" name="operation" value="add" checked>
+                    <span id="addLabel">Addition</span>
+                </label>
+                <label>
+                    <input type="radio" name="operation" value="subtract">
+                    <span id="subtractLabel">Subtraction</span>
+                </label>
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>

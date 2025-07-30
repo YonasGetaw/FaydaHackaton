@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethiopian Nursery Rhymes</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ethiopian Nursery Rhymes</h1>
+            <h2>Traditional Children's Songs</h2>
+        </header>
+
+        <main>
+            <div class="rhymes-container">
+                <div class="rhyme-card">
+                    <h3>Abebayehosh</h3>
+                    <div class="rhyme-content">
+                        <p>Abebayehosh, abebayehosh,</p>
+                        <p>Yene konjo, yene konjo,</p>
+                        <p>Ene new yene mari, ene new yene mari,</p>
+                        <p>Abebayehosh, abebayehosh!</p>
+                    </div>
+                    <div class="rhyme-controls">
+                        <button class="play-btn" data-rhyme="abebayehosh">Play</button>
+                        <button class="stop-btn">Stop</button>
+                    </div>
+                    <audio id="abebayehosh-audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+                </div>
+
+                <div class="rhyme-card">
+                    <h3>Ambassel</h3>
+                    <div class="rhyme-content">
+                        <p>Ambassel, Ambassel,</p>
+                        <p>Lijé new yihonal,</p>
+                        <p>Ene alchalkum, ene alchalkum,</p>
+                        <p>Ambassel, Ambassel!</p>
+                    </div>
+                    <div class="rhyme-controls">
+                        <button class="play-btn" data-rhyme="ambassel">Play</button>
+                        <button class="stop-btn">Stop</button>
+                    </div>
+                    <audio id="ambassel-audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio>
+                </div>
+
+                <div class="rhyme-card">
+                    <h3>Enzilalehu</h3>
+                    <div class="rhyme-content">
+                        <p>Enzilalehu, enzilalehu,</p>
+                        <p>Yene lijé, yene lijé,</p>
+                        <p>Ene new yene fikir, ene new yene fikir,</p>
+                        <p>Enzilalehu, enzilalehu!</p>
+                    </div>
+                    <div class="rhyme-controls">
+                        <button class="play-btn" data-rhyme="enzilalehu">Play</button>
+                        <button class="stop-btn">Stop</button>
+                    </div>
+                    <audio id="enzilalehu-audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"></audio>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>More rhymes: 
+                <a href="#" class="rhyme-link">Yene Fikir</a> | 
+                <a href="#" class="rhyme-link">Tizita</a>
+            </p>
+            <p>Made with ❤️ for Ethiopian children</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

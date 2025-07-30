@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kids Drawing Pad</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="drawing-area">
+            <h1>🎨 Drawing Pad</h1>
+            <p class="instruction">Draw anything you like!</p>
+            <canvas id="drawingCanvas" width="600" height="400"></canvas><br>
+            <div class="toolbar">
+                <button onclick="clearCanvas()">🧹 Clear</button>
+                <button onclick="changeColor('#FF5252')">🔴 Red</button>
+                <button onclick="changeColor('#4285F4')">🔵 Blue</button>
+                <button onclick="changeColor('#4CAF50')">🟢 Green</button>
+                <button onclick="changeColor('#FFEB3B')">🟡 Yellow</button>
+                <button onclick="changeColor('#000000')">⚫ Black</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

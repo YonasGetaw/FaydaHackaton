@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>እንቁቅ ትምህርት | Kids Learning Ethiopia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Kids Learning Ethiopia</h1>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="content-section active" id="reading">
+            <h2>Learn Letters & Numbers</h2>
+            
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="english">English</button>
+                <button class="category-tab" data-category="amharic">Amharic</button>
+                <button class="category-tab" data-category="numbers">Numbers</button>
+            </div>
+            
+            <div class="subcategory-tabs" id="english-subcategories" style="display: none;">
+                <button class="subcategory-tab active" data-subcategory="uppercase">A-Z</button>
+                <button class="subcategory-tab" data-subcategory="lowercase">a-z</button>
+            </div>
+            
+            <div class="subcategory-tabs" id="numbers-subcategories" style="display: none;">
+                <button class="subcategory-tab active" data-subcategory="arabic">1-20</button>
+                <button class="subcategory-tab" data-subcategory="amharic-numbers">፩-፲</button>
+            </div>
+            
+            <div class="learning-grid" id="learning-grid"></div>
+        </section>
+
+        <section class="content-section" id="writing">
+            <h2>Practice Writing</h2>
+            
+            <div class="writing-controls">
+                <select id="letter-select" class="letter-selector">
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+                
+                <div class="action-buttons">
+                    <button id="clear-btn" class="action-btn">Clear</button>
+                    <button id="speak-btn" class="action-btn">Hear</button>
+                </div>
+            </div>
+            
+            <div class="writing-area">
+                <canvas id="writing-canvas"></canvas>
+                <div class="writing-guide"></div>
+            </div>
+            
+            <div class="feedback" id="writing-feedback"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

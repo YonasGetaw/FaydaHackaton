@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebra Basics</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Algebra Basics</h1>
+        <p class="subtitle">For Ages 10-12</p>
+    </header>
+
+    <main>
+        <div class="lesson-container">
+            <div id="algebraLesson">
+                <h2>Introduction to Variables</h2>
+                <p>A variable is a symbol (usually a letter) that represents an unknown number.</p>
+                <p>Example: In the equation <strong>x + 5 = 12</strong>, x is the variable.</p>
+                <button class="next-btn" onclick="showPractice()">Practice Now</button>
+            </div>
+            <div id="algebraPractice" style="display:none;">
+                <p id="algebraQuestion"></p>
+                <input type="number" id="algebraAnswer" placeholder="Your answer...">
+                <button onclick="checkAnswer()">Submit</button>
+                <div id="algebraResult"></div>
+                <div id="algebraStats">
+                    <p>Score: <span id="algebraScore">0</span></p>
+                    <p>Questions: <span id="algebraCount">0</span>/5</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><a href="../index.html" class="footer-link">Back to Main Menu</a></p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

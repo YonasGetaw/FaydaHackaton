@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Bee Challenge</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1 id="mainTitle">Spelling Bee Challenge</h1>
+        <button id="languageToggle" class="language-btn">አማርኛ</button>
+    </header>
+
+    <main>
+        <div id="introSection">
+            <p id="introText">Challenge your spelling abilities with progressively difficult words. Click the button below to begin!</p>
+            <div class="start-container">
+                <button id="startButton" class="start-btn">Start Spelling Bee</button>
+            </div>
+        </div>
+
+        <div id="spellingGame">
+            <p id="spellingWordPrompt"></p>
+            <audio id="wordAudio" controls></audio>
+            <input type="text" id="spellingAnswer" placeholder="Spell the word...">
+            <button id="spellingSubmit">Submit</button>
+            <div id="spellingResult"></div>
+            <div id="spellingStats">
+                <div class="stat-box">
+                    <div class="stat-label" id="levelLabel">Level</div>
+                    <div class="stat-value" id="spellingLevel">1</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label" id="scoreLabel">Score</div>
+                    <div class="stat-value" id="spellingScore">0</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label" id="livesLabel">Lives</div>
+                    <div class="stat-value" id="spellingLives">3</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        
+            <a href="#" class="footer-link" id="aboutLink">About</a> | 
+            <a href="#" class="footer-link" id="contactLink">Contact</a> | 
+            <a href="#" class="footer-link" id="privacyLink">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Challenges for Kids</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎉 Fun Challenges & Competitions for Kids 🎈</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#spelling">Spelling Bee</a></li>
+            <li><a href="#math">Math Challenge</a></li>
+            <li><a href="#coding">Coding Challenge</a></li>
+            <li><a href="#puzzles">Puzzles</a></li>
+            <li><a href="#science">Science Fun</a></li>
+            <li><a href="#memory">Memory Game</a></li>
+            <li><a href="#storytelling">Storytelling</a></li>
+        </ul>
+    </nav>
+
+    <section id="spelling">
+        <h2>🏆 Spelling Bee Competition</h2>
+        <p>Test your spelling skills! Click the button to start.</p>
+        <button onclick="startSpelling()">Start Spelling Game</button>
+        <p id="spelling-result"></p>
+    </section>
+
+    <section id="math">
+        <h2>➕ Math Challenge</h2>
+        <p>Answer as many math questions as you can before the timer ends!</p>
+        <button onclick="startMathChallenge()">Start Math Challenge</button>
+        <p id="math-score"></p>
+    </section>
+
+    <section id="coding">
+        <h2>👩‍💻 Coding Challenge</h2>
+        <p>Create a simple program using Scratch or Python. Share your project!</p>
+    </section>
+
+    <section id="puzzles">
+        <h2>🧩 Puzzle & Riddle Challenge</h2>
+        <p>Can you solve this riddle? <strong>What has keys but can't open locks?</strong></p>
+        <input type="text" id="riddle-answer">
+        <button onclick="checkRiddle()">Check Answer</button>
+        <p id="riddle-result"></p>
+    </section>
+
+    <section id="science">
+        <h2>🔬 Science Experiment Competition</h2>
+        <p>Perform a fun science experiment and explain how it works!</p>
+    </section>
+
+    <section id="memory">
+        <h2>🧠 Memory & Concentration Challenge</h2>
+        <button onclick="startMemoryGame()">Start Memory Game</button>
+        <p id="memory-score"></p>
+    </section>
+
+    <section id="storytelling">
+        <h2>📖 Storytelling Challenge</h2>
+        <button onclick="generateStoryWords()">Get Random Words</button>
+        <p id="story-words"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+:root {
+    --primary: #4CAF50; /* Changed to green as requested */
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary);
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--white);
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.weather-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.weather-btn {
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.weather-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.weather-display {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.weather-info {
+    max-width: 500px;
+}
+
+@media (max-width: 600px) {
+    .weather-buttons {
+        flex-direction: column;
+    }
+    
+    .weather-btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Sets the character encoding to support all letters and symbols -->
+  <meta charset="UTF-8">
+  <!-- Makes sure the page is responsive on all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Sets the title of the webpage -->
+  <title>Ethiopian History and Geography for Kids</title>
+  <!-- Links to the external CSS file for styling -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header with the main title and brief description -->
+  <header>
+    <h1>Ethiopian History and Geography</h1>
+    <p> Explore history, geography and culture of Ethiopia!</p>
+  </header>
+
+  <!-- Navigation menu with buttons to switch between topics -->
+  <nav>
+    <button onclick="showSection('introduction')">Introduction</button>
+    <button onclick="showSection('historical-journey')">Historical Journey</button>
+    <button onclick="showSection('geography-exploration')">Geography Exploration</button>
+    <button onclick="showSection('cultural-connections')">Cultural Connections</button>
+    <!-- <button onclick="showSection('interactive-activities')">Interactive Activities</button> -->
+    <button onclick="showSection('summary-discussion')">Summary & Discussion</button>
+    <button onclick="showSection('materials-assessment')">Materials & Assessment</button>
+  </nav>
+  
+  <!-- Section 1: Introduction -->
+  <section id="introduction" class="content">
+    <h2>Introduction</h2>
+    <p><strong>Brief Overview:</strong> Ethiopia is one of the oldest nations in the world with a rich history dating back thousands of years. It is known for its unique traditions, ancient kingdoms, and diverse landscapes.</p>
+    <ul>
+      <li><strong>Ethiopia’s Location:</strong> Located in East Africa.</li>
+      <li><strong>Name Meaning:</strong> Historically linked to “land of the burnt faces”.</li>
+      <li><strong>Map Overview:</strong> Below is a map showing Ethiopia's position in Africa.</li>
+    </ul>
+    <!-- Replace with an actual image file if available -->
+    <img src="./map.png" alt="Map of Ethiopia" width="300">
+  </section>
+
+  <!-- Section 2: Historical Journey -->
+  <section id="historical-journey" class="content">
+    <h2>Historical Journey</h2>
+    <!-- Ancient Civilizations and Kingdoms -->
+    <h3>Ancient Civilizations and Kingdoms</h3>
+    <div class="history-section">
+      <h4>Axumite Empire</h4>
+      <p>The Axumite Empire was one of the great ancient civilizations known for its impressive stelae (tall stone monuments) and its early adoption of Christianity.</p>
+    </div>
+    <div class="history-section">
+      <h4>Queen of Sheba</h4>
+      <p>The legend of the Queen of Sheba, who visited King Solomon, is an important part of Ethiopian lore.</p>
+    </div>
+    <div class="history-section">
+      <h4>Medieval Ethiopia</h4>
+      <p>Ethiopian history includes the rise of the Ethiopian Orthodox Church and unique kings and dynasties that ruled the land for centuries.</p>
+    </div>
+    <!-- Modern History -->
+    <h3>Modern History</h3>
+    <div class="history-section">
+      <h4>Resistance and Independence</h4>
+      <p>Ethiopia is one of the few African countries never fully colonized. Its modern milestones include the formation of the modern state and resistance against colonial rule.</p>
+    </div>
+  </section>
+
+  <!-- Section 3: Geography Exploration -->
+  <section id="geography-exploration" class="content">
+    <h2>Geography Exploration</h2>
+    <!-- Natural Landscapes -->
+    <h3>Natural Landscapes</h3>
+    <div class="geo-section">
+      <h4>Mountains & Highlands</h4>
+      <p>Ethiopia has many highlands and mountains, including the Simien Mountains, which offer breathtaking views and unique wildlife.</p>
+    </div>
+    <div class="geo-section">
+      <h4>Valleys & Rivers</h4>
+      <p>The Great Rift Valley runs through Ethiopia, and rivers such as the Blue Nile help keep the lands fertile.</p>
+    </div>
+    <div class="geo-section">
+      <h4>Lakes & Water Bodies</h4>
+      <p>Ethiopia is home to several large lakes that play an important role for both people and nature.</p>
+    </div>
+    <!-- Climate & Ecosystems -->
+    <h3>Climate & Ecosystems</h3>
+    <div class="geo-section">
+      <h4>Varied Climate</h4>
+      <p>The country experiences different climates—from cool highlands to hot lowlands—affecting its plants, animals, and people.</p>
+    </div>
+    <div class="geo-section">
+      <h4>Biodiversity</h4>
+      <p>Ethiopia boasts unique wildlife and plant species in its national parks and natural reserves.</p>
+    </div>
+  </section>
+
+  <!-- Section 4: Cultural Connections -->
+  <section id="cultural-connections" class="content">
+    <h2>Cultural Connections</h2>
+    <ul>
+      <li><strong>Traditional Music and Dance:</strong> Explore how Ethiopia’s history and geography influence its music and dance.</li>
+      <li><strong>Languages and Traditions:</strong> Discover the diversity of languages and cultural traditions in Ethiopia.</li>
+      <li><strong>Historical Monuments:</strong> Learn about famous sites like Lalibela’s rock-hewn churches and the ruins of Axum.</li>
+    </ul>
+  </section>
+
+  <!-- Section 5: Interactive Activities -->
+  <section id="interactive-activities" class="content">
+    <h2>Interactive Activities</h2>
+    <!-- Map Activity -->
+    <h3>Map Activity</h3>
+    <p>Label the map of Ethiopia with its mountains, rivers, and valleys!</p>
+    <textarea id="map-activity" placeholder="Type your labels here..." rows="4" cols="50"></textarea>
+    
+    <!-- Timeline Creation -->
+    <h3>Timeline Creation</h3>
+    <p>Create a timeline of key events in Ethiopian history. Add events below:</p>
+    <input type="text" id="timeline-input" placeholder="Enter a historical event">
+    <button onclick="addTimelineEvent()">Add Event</button>
+    <ul id="timeline-list"></ul>
+    
+    <!-- Storytelling & Role Play -->
+    <h3>Storytelling & Role Play</h3>
+    <p>Imagine you're in an ancient royal court or visiting the Queen of Sheba. Write your short story:</p>
+    <textarea id="story-input" placeholder="Write your story here..." rows="4" cols="50"></textarea>
+    <button onclick="submitStory()">Submit Story</button>
+    <p id="story-output"></p>
+    
+    <!-- Art & Craft -->
+    <h3>Art & Craft</h3>
+    <p>Draw a picture of Ethiopia’s landscapes or historical monuments and share it with your teacher.</p>
+  </section>
+
+  <!-- Section 6: Summary & Discussion -->
+  <section id="summary-discussion" class="content">
+    <h2>Summary & Discussion</h2>
+    <p><strong>Recap:</strong> Ethiopia’s ancient history, diverse geography, and vibrant cultural traditions make it a fascinating country to explore.</p>
+    <p><strong>Group Discussion Questions:</strong></p>
+    <ul>
+      <li>What part of Ethiopian history surprised you the most?</li>
+      <li>How do you think Ethiopia’s geography influences its culture?</li>
+    </ul>
+    <p><strong>Reflection:</strong> Why is it important to learn about history and geography?</p>
+  </section>
+
+  <!-- Section 7: Materials Needed & Assessment -->
+  <section id="materials-assessment" class="content">
+    <h2>Materials Needed & Assessment</h2>
+    <h3>Materials Needed</h3>
+    <ul>
+      <li>A world map and a detailed map of Ethiopia</li>
+      <li>Images or videos showcasing Ethiopian landmarks</li>
+      <li>Art supplies for timelines, maps, and creative projects</li>
+      <li>Printed worksheets on Ethiopian history and geography</li>
+    </ul>
+    <h3>Assessment</h3>
+    <ul>
+      <li>Participation in group discussions and role play</li>
+      <li>Accuracy in map labeling and timeline creation</li>
+      <li>Creativity and engagement in art & craft projects</li>
+    </ul>
+  </section>
+
+  <!-- Links to the external JavaScript file for interactivity -->
+  <script src="script.js"></script>
+</body>
+</html>

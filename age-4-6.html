@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="title.age4_6">Ethiopis - Age 4-6 Learning</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon_io/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/age-4-6.css">
+  
+</head>
+<body>
+  <header class="site-header" style="background-color: #4CAF50; padding: 10px; display: flex; align-items: center; justify-content: space-between; color: white;">
+    <div class="logo-placeholder">
+        <img src="./images/new logo.png" alt="Ethiopis Logo" width="150" height="60" loading="lazy"/>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation" style="display: flex; gap: 10px;">
+        <button id="logout-button" data-i18n="nav.logout" style="background-color: white; color: #4CAF50; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-size: 16px;">Logout</button>
+         </nav>
+</header>
+  <main class="learning-portal">
+    <div class="session-timer-container">
+      <div class="session-timer">
+        <div class="timer-header">
+          <i class="fas fa-clock"></i>
+          <span data-i18n="session.timer_title">Session Timer</span>
+        </div>
+        <div class="timer-display">
+          <span id="session-time">30:00</span>
+          <div class="timer-progress">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <h1><i class="fas fa-child"></i> <span data-i18n="age4_6.title">Age Group 4-6 (Preschool & Kindergarten)</span></h1>
+    
+    <!-- Alphabet & Numbers Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-font"></i>
+        <h2 data-i18n="age4_6.alphabet_numbers">Alphabet & Numbers</h2>
+      </div>
+      <div class="portfolio-grid">
+        
+        <div id="videoModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <video controls width="100%">
+              <source src="" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <a href="./newgame/Age 4-6/Alphabet-and-Numbers/amharic alphabet/index.html" data-video="./videos/የአማርኛ ፊደላት ከ ሀ እስከ ፐ( ሀሁ Ha Hu).mp4">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/hahu1.png');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.amharic_alphabet">Amharic Alphabet</h3>
+              <p class="portfolio-description" data-i18n="age4_6.amharic_alphabet_desc">
+                Learn all 33 Amharic letters with sounds and examples
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./newgame/Age 4-6/Alphabet-and-Numbers/englishalphabate/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/abcd1.avif');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.english_alphabet">English Alphabet</h3>
+              <p class="portfolio-description" data-i18n="age4_6.english_alphabet_desc">A-Z with phonics and vocabulary</p>
+            </div>
+          </div>
+        </a>
+        <a href="./newgame/Age 4-6/Alphabet-and-Numbers/numbers1-20/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/num5.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.numbers">Numbers 1-20</h3>
+              <p class="portfolio-description" data-i18n="age4_6.numbers_desc">Counting in Amharic and English</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Shapes & Colors Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-shapes"></i>
+        <h2 data-i18n="age4_6.shapes_colors">Shapes & Colors</h2>
+      </div>
+      <div class="portfolio-grid">
+        <a href="./newgame/Age 4-6/Basis shapes and colors/basicshape/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/shape1.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.basic_shapes">Basic Shapes</h3>
+              <p class="portfolio-description" data-i18n="age4_6.basic_shapes_desc">Circle, square, triangle and more</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 4-6/Basis shapes and colors/colorname/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/colorn.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.color_names">Color Names</h3>
+              <p class="portfolio-description" data-i18n="age4_6.color_names_desc">Learn colors in multiple languages</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 4-6/Basis shapes and colors/shapmatching/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/shape2.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-gamepad"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.shape_game">Shape Matching Game</h3>
+              <p class="portfolio-description" data-i18n="age4_6.shape_game_desc">Match shapes with real objects</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    
+    <!-- Stories & Rhymes Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-book-open"></i>
+        <h2 data-i18n="age4_6.stories_rhymes">Stories & Rhymes</h2>
+      </div>
+      <div class="portfolio-grid">
+        <a href="./newgame/Age 4-6/Interactive-Songs-Poems/ethiopianstory/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/story.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.ethiopian_stories">Ethiopian Stories</h3>
+              <p class="portfolio-description" data-i18n="age4_6.ethiopian_stories_desc">Traditional folktales with animations</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 4-6/Interactive-Songs-Poems/nurseryrhymes/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/nm.jfif');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.nursery_rhymes">Nursery Rhymes</h3>
+              <p class="portfolio-description" data-i18n="age4_6.nursery_rhymes_desc">Popular English rhymes with actions</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 4-6/Interactive-Songs-Poems/singAlone/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/sing.jfif');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-music"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.sing_along">Sing Along</h3>
+              <p class="portfolio-description" data-i18n="age4_6.sing_along_desc">Interactive songs with lyrics</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    
+    <!-- Games & Puzzles Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-puzzle-piece"></i>
+        <h2 data-i18n="age4_6.games_puzzles">Games & Puzzles</h2>
+      </div>
+      <div class="portfolio-grid">
+        <a href="./newgame/Age 4-6/FunGamesPuzzles/memorygame/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/mg.png');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-gamepad"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.memory_game">Memory Game</h3>
+              <p class="portfolio-description" data-i18n="age4_6.memory_game_desc">Match pairs of images</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 4-6/FunGamesPuzzles/animalpuzzle/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/animal.webp');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-gamepad"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.animal_puzzle">Animal Puzzle</h3>
+              <p class="portfolio-description" data-i18n="age4_6.animal_puzzle_desc">Drag and drop puzzle pieces</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 4-6/FunGamesPuzzles/lettersmatching/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/letter.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-gamepad"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.letter_game">Letter Matching</h3>
+              <p class="portfolio-description" data-i18n="age4_6.letter_game_desc">Match letters with pictures</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    
+    <!-- Science & Nature Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-leaf"></i>
+        <h2 data-i18n="age4_6.science_nature">Science & Nature</h2>
+      </div>
+      <div class="portfolio-grid">
+        <a href="./newgame/Age 4-6/Basic-Science - Nature/animal/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/etan.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.ethiopian_animals">Ethiopian Animals</h3>
+              <p class="portfolio-description" data-i18n="age4_6.ethiopian_animals_desc">Learn about local wildlife</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 4-6/Basic-Science - Nature/weather/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/weater.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.weather">Weather</h3>
+              <p class="portfolio-description" data-i18n="age4_6.weather_desc">Sunny, rainy, cloudy and more</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 4-6/Basic-Science - Nature/plant/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/plants.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.plants">Plants</h3>
+              <p class="portfolio-description" data-i18n="age4_6.plants_desc">Parts of a plant and how they grow</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    
+    <!-- Drawing & Writing Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-pencil-alt"></i>
+        <h2 data-i18n="age4_6.drawing_writing">Drawing & Writing</h2>
+      </div>
+      <div class="portfolio-grid">
+        <a href="./newgame/Age 4-6/Drawing-Handwriting-Practice/drawingpad/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/dp.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-paint-brush"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.drawing_pad">Drawing Pad</h3>
+              <p class="portfolio-description" data-i18n="age4_6.drawing_pad_desc">Digital drawing with colors</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 4-6/Drawing-Handwriting-Practice/lettertracing/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/tras.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-pen"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.letter_tracing">Letter Tracing</h3>
+              <p class="portfolio-description" data-i18n="age4_6.letter_tracing_desc">Practice writing letters</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 4-6/Drawing-Handwriting-Practice/coloringbook/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/cb.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-palette"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age4_6.coloring_book">Coloring Book</h3>
+              <p class="portfolio-description" data-i18n="age4_6.coloring_book_desc">Color Ethiopian-themed images</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="content-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close modal">&times;</button>
+      <div class="modal-body">
+        <iframe id="modal-iframe" width="100%" height="500" frameborder="0" allowfullscreen
+          title="Content Viewer" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <video controls width="100%">
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p data-i18n="footer.copyright">© 2025 Ethiopis. All rights reserved.</p>
+  </footer>
+  <script>
+
+    document.getElementById('logout-button').addEventListener('click', function() {
+        if (confirm('Are you sure you want to logout?')) {
+            window.location.href = 'index.html'; // Replace with your actual logout URL
+
+        }
+
+    });
+
+</script>
+  <script src="js/i18n.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/age-4-6.js"></script>
+  <script src="js/auth-check.js"></script>
+</body>
+</html>

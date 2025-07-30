@@ -1,0 +1,276 @@
+:root {
+  --primary: #000000;
+  --secondary: #4CAF50;
+  --accent: #4CAF50;
+  --bg: #FFFFFF;
+  --text: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Bubblegum Sans', cursive;
+  background: var(--bg);
+  min-height: 100vh;
+  padding: 20px;
+  color: var(--text);
+}
+
+/* Header */
+.header {
+  background: var(--bg);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--secondary);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.star-counter {
+  font-size: 1.2rem;
+}
+
+/* Game Grid & Cards */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.game-card {
+  background: var(--bg);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border: 3px solid var(--secondary);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+button, .number-btn {
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover, .number-btn:hover {
+  background-color: #45a049;
+}
+
+/* Links */
+a {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+/* Modals */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  font-size: 35px;
+  cursor: pointer;
+  color: var(--primary);
+}
+
+/* Math Game */
+.math-problem {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.number-pad {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin: 2rem auto;
+}
+
+/* Language Game */
+.word-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.word-card {
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 10px;
+  cursor: grab;
+  border: 2px solid var(--secondary);
+}
+
+.drop-zone {
+  min-height: 150px;
+  border: 3px dashed var(--primary);
+  border-radius: 10px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+/* History Game */
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.timeline-item {
+  padding: 15px;
+  background: #f8f8f8;
+  border: 2px solid var(--secondary);
+  border-radius: 8px;
+  cursor: move;
+}
+
+/* Science Game */
+.color-mixer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.color-tube {
+  width: 80px;
+  height: 120px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid var(--primary);
+}
+
+.result-box {
+  width: 150px;
+  height: 150px;
+  margin: 1rem auto;
+  border-radius: 15px;
+  border: 4px solid var(--primary);
+}
+
+/* Geography Game */
+.ethiopia-map {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/7/71/Ethiopia_%28orthographic_projection%29.svg') no-repeat center/contain;
+}
+
+.region {
+  position: absolute;
+  background: rgba(76, 175, 80, 0.3);
+  border: 2px solid var(--secondary);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.region:hover {
+  background: rgba(76, 175, 80, 0.5);
+}
+
+/* Feedback Container */
+.feedback-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: none;
+  padding: 1rem 1.5rem;
+  min-width: 200px;
+  border-radius: 10px;
+  color: white;
+  background-color: var(--secondary);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-size: 1.2rem;
+}
+
+.feedback-container.active {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* Confetti */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  animation: confetti-fall 3s linear;
+  z-index: 2000;
+}
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-100vh) rotate(0deg); }
+  100% { transform: translateY(100vh) rotate(360deg); }
+}

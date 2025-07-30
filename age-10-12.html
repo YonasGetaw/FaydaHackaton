@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="title.age10_12">Ethiopis - Age 10-12 Learning</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon_io/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/age-10-12.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="logo-placeholder">
+        <img src="./images/new logo.png" alt="Ethiopis Logo" width="150" height="60" loading="lazy"/>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+        <button id="logout-button" data-i18n="nav.logout">Logout</button>
+        <button id="language-toggle" class="language-toggle" aria-label="Toggle language">EN | አማ</button>
+    </nav>
+    <button class="hamburger-menu" aria-label="Mobile menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+  <main class="learning-portal">
+    <div class="session-timer-container">
+      <div class="session-timer">
+        <div class="timer-header">
+          <i class="fas fa-clock"></i>
+          <span data-i18n="session.timer_title">Session Timer</span>
+        </div>
+        <div class="timer-display">
+          <span id="session-time">60:00</span>
+          <div class="timer-progress">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <h1><i class="fas fa-user-graduate"></i> <span data-i18n="age10_12.title">Age Group 10-12 (Upper Primary)</span></h1>
+    
+    <!-- Advanced Reading & Writing Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-book-open"></i>
+        <h2 data-i18n="age10_12.advanced_reading">Advanced Reading & Writing</h2>
+      </div>
+      <div class="portfolio-grid">
+        
+        <div id="videoModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <video controls width="100%">
+              <source src="" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <a href="./newgame/Age 10-12/Advanced-Reading-Writing/essaywriting/index.html" data-video="./videos/essay-writing.mp4">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/essay.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.essay_writing">Essay Writing</h3>
+              <p class="portfolio-description" data-i18n="age10_12.essay_writing_desc">
+                Learn to structure and write short essays in English and Amharic
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./newgame/Age 10-12/Advanced-Reading-Writing/readingcompression/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/read\ comp.webp');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.reading_comp">Reading Comprehension</h3>
+              <p class="portfolio-description" data-i18n="age10_12.reading_comp_desc">Advanced passages with critical thinking questions</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./newgame/Age 10-12/Advanced-Reading-Writing/createwriting/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/cw.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.creative_writing">Creative Writing</h3>
+              <p class="portfolio-description" data-i18n="age10_12.creative_writing_desc">Develop storytelling and descriptive writing skills</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Math Challenges Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-square-root-alt"></i>
+        <h2 data-i18n="age10_12.math_challenges">Math Challenges</h2>
+      </div>
+      <div class="portfolio-grid">
+        <a href="./newgame/Age 10-12/MathChallenges/fractionanddecimal/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/fun.png');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.fractions">Fractions & Decimals</h3>
+              <p class="portfolio-description" data-i18n="age10_12.fractions_desc">Operations with fractions and decimal numbers</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 10-12/MathChallenges/algebrabasic/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/alg.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.algebra">Algebra Basics</h3>
+              <p class="portfolio-description" data-i18n="age10_12.algebra_desc">Introduction to variables and simple equations</p>
+            </div>
+          </div>
+        </a>
+        <a href="./newgame/Age 10-12/MathChallenges/geometry/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/geo1.png');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.geometry">Geometry</h3>
+              <p class="portfolio-description" data-i18n="age10_12.geometry_desc">Shapes, angles, and area calculations</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    
+    <!-- Science & STEM Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-atom"></i>
+        <h2 data-i18n="age10_12.science_stem">Science Projects & STEM</h2>
+      </div>
+      <div class="portfolio-grid">
+        <a href="./newgame/Age 10-12/Science-Projects-STEM-Activities/electriitybasics/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/elec.png');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.electricity">Electricity Basics</h3>
+              <p class="portfolio-description" data-i18n="age10_12.electricity_desc">Circuits, conductors and simple electronics</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 10-12/Science-Projects-STEM-Activities/watercycle/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/Water-Cycle.png');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.water_cycle">Water Cycle</h3>
+              <p class="portfolio-description" data-i18n="age10_12.water_cycle_desc">Evaporation, condensation and precipitation</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 10-12/Science-Projects-STEM-Activities/scienceexpertmet/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/se.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-flask"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.science_experiments">Science Experiments</h3>
+              <p class="portfolio-description" data-i18n="age10_12.science_experiments_desc">Hands-on projects with household items</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    
+    <!-- Critical Thinking Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-brain"></i>
+        <h2 data-i18n="age10_12.critical_thinking">Critical Thinking</h2>
+      </div>
+      <div class="portfolio-grid">
+        <a href="./newgame/Age 10-12/Critical-Thinking-Problem-Solving-Games/logicalpuzzle/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/lp.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.logic_puzzles">Logic Puzzles</h3>
+              <p class="portfolio-description" data-i18n="age10_12.logic_puzzles_desc">Develop reasoning and problem-solving skills</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 10-12/Critical-Thinking-Problem-Solving-Games/brainteasers/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/brain.png');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.brain_teasers">Brain Teasers</h3>
+              <p class="portfolio-description" data-i18n="age10_12.brain_teasers_desc">Challenging problems to stretch your mind</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 10-12/Critical-Thinking-Problem-Solving-Games/desionmaking/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/dm.webp');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.decision_making">Decision Making</h3>
+              <p class="portfolio-description" data-i18n="age10_12.decision_making_desc">Learn to evaluate options and consequences</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    
+    <!-- History & Geography Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-globe-africa"></i>
+        <h2 data-i18n="age10_12.history_geo">Ethiopian History & Geography</h2>
+      </div>
+      <div class="portfolio-grid">
+        <a href="./newgame/Age 10-12/Ethiopian-History-Geography/ethiopianregion/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/reg.png');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.ethiopian_regions">Ethiopian Regions</h3>
+              <p class="portfolio-description" data-i18n="age10_12.ethiopian_regions_desc">Geography, climate and cultures of Ethiopia</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 10-12/Ethiopian-History-Geography/historicalevents/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/eth.webp');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.historical_events">Historical Events</h3>
+              <p class="portfolio-description" data-i18n="age10_12.historical_events_desc">Key moments in Ethiopian history</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 10-12/Ethiopian-History-Geography/culturalhertages/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/cul.jfif');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.cultural_heritage">Cultural Heritage</h3>
+              <p class="portfolio-description" data-i18n="age10_12.cultural_heritage_desc">UNESCO sites and national treasures</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    
+    <!-- Computer Skills Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-keyboard"></i>
+        <h2 data-i18n="age10_12.computer_skills">Basic Computer Skills</h2>
+      </div>
+      <div class="portfolio-grid">
+        <a href="./newgame/Age 10-12/Basic-Computer-Skills/typingskill/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/typ.png');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.typing">Typing Skills</h3>
+              <p class="portfolio-description" data-i18n="age10_12.typing_desc">Learn touch typing and keyboard skills</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 10-12/Basic-Computer-Skills/internetsafety/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/safty.png');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.internet_safety">Internet Safety</h3>
+              <p class="portfolio-description" data-i18n="age10_12.internet_safety_desc">Staying safe and responsible online</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 10-12/Basic-Computer-Skills/presentationskill/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/presnt.jpeg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.presentation">Presentation Skills</h3>
+              <p class="portfolio-description" data-i18n="age10_12.presentation_desc">Creating and delivering digital presentations</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    
+    <!-- Fun Challenges Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-trophy"></i>
+        <h2 data-i18n="age10_12.fun_challenges">Fun Challenges & Competitions</h2>
+      </div>
+      <div class="portfolio-grid">
+        <a href="./newgame/Age 10-12/Fun-Challenges-Competitions/spellingbee/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/spbee.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.spelling_bee">Spelling Bee</h3>
+              <p class="portfolio-description" data-i18n="age10_12.spelling_bee_desc">Test your spelling skills with challenges</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 10-12/Fun-Challenges-Competitions/matchContest/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/mathcon.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.math_contest">Math Contest</h3>
+              <p class="portfolio-description" data-i18n="age10_12.math_contest_desc">Timed math challenges and competitions</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 10-12/Fun-Challenges-Competitions/ScienceQuize/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/Science-quiz.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-gamepad"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age10_12.science_quiz">Science Quiz</h3>
+              <p class="portfolio-description" data-i18n="age10_12.science_quiz_desc">Test your science knowledge</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="content-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close modal">&times;</button>
+      <div class="modal-body">
+        <iframe id="modal-iframe" width="100%" height="500" frameborder="0" allowfullscreen
+          title="Content Viewer" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <video controls width="100%">
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p data-i18n="footer.copyright">© 2025 Ethiopis. All rights reserved.</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/age-10-12.js"></script>
+  <script src="js/auth-check.js"></script>
+</body>
+</html>

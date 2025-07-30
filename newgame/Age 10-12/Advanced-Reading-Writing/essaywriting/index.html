@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay Writing</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Essay Writing</h1>
+            <h2>Master the Art of Structured Writing</h2>
+        </header>
+
+        <main>
+            <div class="essay-types">
+                <h3>Choose an Essay Type</h3>
+                <div class="type-buttons">
+                    <button class="type-btn active" data-type="persuasive">Persuasive</button>
+                    <button class="type-btn" data-type="narrative">Narrative</button>
+                    <button class="type-btn" data-type="expository">Expository</button>
+                    <button class="type-btn" data-type="descriptive">Descriptive</button>
+                </div>
+            </div>
+
+            <div class="essay-guide">
+                <h3 id="guide-title">Persuasive Essay Guide</h3>
+                <div class="guide-content" id="guide-content">
+                    <div class="guide-section">
+                        <h4>Introduction</h4>
+                        <p>Start with a hook to grab attention. State your thesis clearly - this is your main argument.</p>
+                        <textarea placeholder="Write your introduction here..."></textarea>
+                    </div>
+                    <div class="guide-section">
+                        <h4>Body Paragraphs</h4>
+                        <p>Each paragraph should present one main idea with supporting evidence. Use facts, examples, and reasoning.</p>
+                        <textarea placeholder="Write your body paragraphs here..."></textarea>
+                    </div>
+                    <div class="guide-section">
+                        <h4>Conclusion</h4>
+                        <p>Restate your thesis in new words. Summarize main points. End with a strong final thought.</p>
+                        <textarea placeholder="Write your conclusion here..."></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="essay-tools">
+                <button id="export-essay" class="tool-btn">Export Essay</button>
+                <button id="check-structure" class="tool-btn">Check Structure</button>
+                <div class="progress-tracker">
+                    <h4>Progress</h4>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%"></div>
+                    </div>
+                    <span class="progress-text">0% complete</span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>More resources: 
+                <a href="#" class="footer-link">Essay Examples</a> | 
+                <a href="#" class="footer-link">Writing Rubric</a>
+            </p>
+            <p>Made with ❤️ for young writers</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

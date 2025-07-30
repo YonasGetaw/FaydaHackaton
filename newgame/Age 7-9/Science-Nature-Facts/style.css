@@ -1,0 +1,219 @@
+/* --------------------------
+   BASE PAGE STYLES
+--------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Language Toggle */
+  .language-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .lang-btn {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #4caf50; /* Green buttons */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .lang-btn.active {
+    opacity: 0.8;
+  }
+  
+  /* Container */
+  .module-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sections */
+  .section {
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+  }
+  
+  .section h2 {
+    color: #000000;
+  }
+  
+  /* Images */
+  #body-diagram img {
+    max-width: 100%;
+  }
+  
+  /* Interactive Areas */
+  .body-part {
+    cursor: pointer;
+  }
+  
+  /* Heartbeat Animation */
+  #heart-animation {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    animation: heartbeat 1s infinite;
+  }
+  
+  @keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Solar System */
+  #solar-system {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .planet {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Gravity Experiment */
+  .gravity-item {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: move;
+  }
+  
+  #gravity-drop {
+    border: 2px dashed #000000;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  /* Ecosystem Game */
+  #ecosystem-game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .ecosystem {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Water Cycle */
+  #clouds {
+    width: 50px;
+    height: 30px;
+    background-color: #4caf50;
+    cursor: pointer;
+  }
+  
+  #rain {
+    position: relative;
+  }
+  
+  #landscape {
+    height: 100px;
+    background-color: #4caf50;
+    margin-top: 20px;
+  }
+  
+  /* Quiz Section */
+  .quiz-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+  }
+  
+  /* Links Example */
+  a {
+    color: #4caf50;
+    text-decoration: underline;
+  }
+  
+  /* --------------------------
+     CUSTOM ALERT MODAL STYLES
+  --------------------------- */
+  /* Overlay that darkens the background */
+  #modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;  /* full viewport width */
+    height: 100vh; /* full viewport height */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998; /* on top of most elements */
+  }
+  
+  /* The custom alert box itself */
+  #custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* above the overlay */
+    padding: 20px;
+  }
+  
+  /* Content inside the alert box */
+  #alert-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Alert message text */
+  #alert-message {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* OK button styling */
+  #alert-ok-button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  #alert-ok-button:hover {
+    opacity: 0.9;
+  }
+  

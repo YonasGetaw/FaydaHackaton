@@ -1,0 +1,109 @@
+:root {
+    --primary: #4CAF50;
+    --white: #FFFFFF;
+    --black: #000000;
+    --shadow-sm: 0 2px 5px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Comic Neue', cursive;
+    background-color: var(--white);
+    color: var(--black);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .app-container {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .app-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .app-header h1 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .instruction {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: var(--black);
+  }
+  
+  .colors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+  }
+  
+  .color-swatch {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  /* Color Definitions */
+  .red { background-color: #FF5252; }
+  .blue { background-color: #4285F4; }
+  .green { background-color: #4CAF50; }
+  .yellow { background-color: #FFEB3B; }
+  .orange { background-color: #FF9800; }
+  .purple { background-color: #9C27B0; }
+  .pink { background-color: #E91E63; }
+  .brown { background-color: #795548; }
+  .black { background-color: #000000; }
+  .white { background-color: #FFFFFF; border-color: #CCCCCC; }
+  .gray { background-color: #9E9E9E; }
+  .cyan { background-color: #00BCD4; }
+  
+  .color-swatch:hover,
+  .color-swatch:focus {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .color-swatch:active {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .colors-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 1rem;
+    }
+    
+    .color-swatch {
+        width: 80px;
+        height: 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .colors-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .color-swatch {
+        width: 70px;
+        height: 70px;
+    }
+  }

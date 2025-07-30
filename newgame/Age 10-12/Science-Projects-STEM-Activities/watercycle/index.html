@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Cycle</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">The Water Cycle</h1>
+        <button id="langToggle" class="lang-btn">አማርኛ</button>
+    </header>
+    
+    <main>
+        <section>
+            <h2 id="section1">What is the Water Cycle?</h2>
+            <p id="content1">The water cycle describes how water evaporates from the surface of the earth, rises into the atmosphere, cools and condenses into rain or snow in clouds, and falls again to the surface as precipitation.</p>
+            <img src="./image.png" alt="Water cycle diagram">
+        </section>
+        
+        <section>
+            <h2 id="section2">Stages of the Water Cycle</h2>
+            <div class="stages-container">
+                <div class="stage-card">
+                    <h3 id="stage1">Evaporation</h3>
+                    <p id="content2">The sun heats up water in rivers, lakes or oceans and turns it into vapor which rises into the air.</p>
+                </div>
+                <div class="stage-card">
+                    <h3 id="stage2">Condensation</h3>
+                    <p id="content3">Water vapor in the air cools and changes back into liquid, forming clouds.</p>
+                </div>
+                <div class="stage-card">
+                    <h3 id="stage3">Precipitation</h3>
+                    <p id="content4">When so much water has condensed that the air cannot hold it anymore, it falls back to earth as rain, snow, sleet or hail.</p>
+                </div>
+                <div class="stage-card">
+                    <h3 id="stage4">Collection</h3>
+                    <p id="content5">Water falls back to earth as precipitation and collects in rivers, lakes and oceans, ready to evaporate again.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2 id="section3">Interactive Water Cycle</h2>
+            <p id="content6">Click the buttons below to see each stage of the water cycle in action.</p>
+            <div class="cycle-controls">
+                <button id="evapBtn" class="cycle-btn">Evaporation</button>
+                <button id="condBtn" class="cycle-btn">Condensation</button>
+                <button id="precipBtn" class="cycle-btn">Precipitation</button>
+                <button id="collectBtn" class="cycle-btn">Collection</button>
+            </div>
+            <div id="cycleDemo" class="demo-area"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p id="footerText">Water is essential to life on Earth. The water cycle ensures water is continuously recycled.</p>
+        <a href="#" id="moreLink">More About Water Conservation</a>
+    </footer>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

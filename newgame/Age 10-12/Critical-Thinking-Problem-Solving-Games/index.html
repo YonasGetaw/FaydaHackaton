@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-Solving Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <section id="intro" class="section">
+            <p id="introText">Are you ready to use your brainpower to crack puzzles, solve mysteries, and think outside the box?</p>
+            <button id="startGame">Start the Game!</button>
+            <button id="englishBtn">English</button>
+            <button id="amharicBtn">አማርኛ</button>
+        </section>
+
+        <section id="challenge2" class="challenge section" style="display: none;">
+            <h2 id="challenge2Title">Challenge 2: The Riddle of the Hidden Treasure</h2>
+            <p id="challenge2Description">You’ve found an ancient map with riddles!</p>
+            <p id="riddle">"I have keys but open no doors. I have space but no room. You can enter but not go outside. What am I?"</p>
+            <input type="text" id="riddleAnswer" placeholder="Your Answer">
+            <button id="checkRiddle">Check Answer</button>
+            <div id="riddleResult"></div>
+            <button id="nextChallenge2">Next Challenge</button>
+            <button id="backToIntro">Back</button>
+        </section>
+
+        <section id="challenge3" class="challenge section" style="display: none;">
+            <h2 id="challenge3Title">Challenge 3: The Maze of Mindful Decisions</h2>
+            <p>You’re stuck in a maze with multiple paths ahead.</p>
+            <div id="mazePaths">
+                <button class="mazePath" data-path="left">Left Path</button>
+                <button class="mazePath" data-path="right">Right Path</button>
+                <button class="mazePath" data-path="straight">Straight Path</button>
+            </div>
+            <div id="mazeResult"></div>
+            <button id="nextChallenge3">Next Challenge</button>
+            <button id="backToChallenge2">Back</button>
+        </section>
+
+        <section id="endGame" class="section" style="display: none;">
+            <h2 id="endTitle">Congratulations!</h2>
+            <p id="endText">You've completed the problem-solving adventure!</p>
+            <button id="restartGame">Go to First Page</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

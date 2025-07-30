@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Computer Learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>💻 Computer Learning for Kids 🎨</h1>
+    </header>
+
+    <nav class="menu">
+        <button onclick="showSection('computer-parts')">🖥 Parts</button>
+        <button onclick="showSection('internet-safety')">🌍 Safety</button>
+        <button onclick="showSection('passwords')">🔐 Passwords</button>
+        <button onclick="showSection('files-folders')">📂 Files</button>
+    </nav>
+
+    <!-- Computer Parts Section -->
+    <section id="computer-parts" class="content active">
+        <h2>🖥 Computer Components</h2>
+        <div class="parts-grid">
+            <div class="part-card" onclick="showInfo('Monitor: Displays images and videos!')">
+                🖥 Monitor
+            </div>
+            <div class="part-card" onclick="showInfo('Keyboard: Input text and numbers!')">
+                ⌨ Keyboard
+            </div>
+            <div class="part-card" onclick="showInfo('Mouse: used for Controls cursor movement!')">
+                🖱 Mouse
+            </div>
+        </div>
+        <div id="parts-info" class="info-box"></div>
+    </section>
+
+    <!-- Internet Safety Section -->
+    <section id="internet-safety" class="content">
+        <h2>🌍 Online Safety Rules</h2>
+        <div class="safety-rules">
+            <div class="rule-item">✅ Use trusted websites</div>
+            <div class="rule-item">❌ Never share passwords</div>
+            <div class="rule-item">✅ Ask adults for help</div>
+            <div class="rule-item">❌ Never put around the water</div>
+        </div>
+    </section>
+
+    <!-- Password Game Section -->
+    <section id="passwords" class="content">
+        <h2>🔐 Create Strong Password</h2>
+        <div class="password-game"
+            <input type="text" 
+                   id="password-input" 
+                   placeholder="Type your password..."
+                   oninput="validatePassword()">
+            <div id="password-strength">
+                <div class="requirement" id="length">✓ 8+ characters</div>
+                <div class="requirement" id="letter">✓ Includes letters</div>
+                <div class="requirement" id="number">✓ Includes numbers</div>
+                <div class="requirement" id="symbol">✓ Includes symbols</div>
+            </div>
+            <button class="check-btn" onclick="finalCheck()">Check Password</button>
+            <div id="password-result"></div>
+        </div>
+    </section>
+
+    <!-- Files & Folders Section -->
+    <section id="files-folders" class="content">
+        <h2>📂 Organize Files</h2>
+        <div class="drag-game">
+            <div class="drag-area">
+                <div id="draggable-file" draggable="true" ondragstart="dragStart(event)">
+                    📄 secret.txt
+                </div>
+            </div>
+            <div class="drop-area" 
+                 ondragover="allowDrop(event)" 
+                 ondrop="handleDrop(event)">
+                📁 My Folder
+            </div>
+        </div>
+        <div id="drop-result"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

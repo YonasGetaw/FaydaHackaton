@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Adventure for Ethiopian Kids</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="language-toggle" id="languageToggle">🌍 English</div>
+        
+        <!-- Home Screen -->
+        <div id="homeScreen" class="screen active">
+            <header>
+                <h1 id="title">Math Adventure for Ethiopian Kids</h1>
+                <div class="mascot">
+                    <img src="https://img.icons8.com/color/96/000000/lion.png" alt="Math Lion" class="mascot-img">
+                    <div class="speech-bubble">Let's solve math!</div>
+                </div>
+            </header>
+            
+            <div class="button-group">
+                <button class="btn btn-play" id="playBtn">🎲 Play Now</button>
+                <button class="btn" id="progressBtn">📊 My Progress</button>
+            </div>
+            
+            <div class="floating-shapes">
+                <div class="shape circle"></div>
+                <div class="shape triangle"></div>
+                <div class="shape square"></div>
+            </div>
+        </div>
+        
+        <!-- Operation Selection Screen -->
+        <div id="operationSelectionScreen" class="screen">
+            <h2 id="operationTitle">Choose a Math Operation</h2>
+            <div class="operation-selection">
+                <button class="btn btn-operation" data-operation="addition">
+                    <span class="icon">➕</span>
+                    <span class="text">Addition</span>
+                </button>
+                <button class="btn btn-operation" data-operation="subtraction">
+                    <span class="icon">➖</span>
+                    <span class="text">Subtraction</span>
+                </button>
+                <button class="btn btn-operation" data-operation="multiplication">
+                    <span class="icon">✖️</span>
+                    <span class="text">Multiplication</span>
+                </button>
+                <button class="btn btn-operation" data-operation="division">
+                    <span class="icon">➗</span>
+                    <span class="text">Division</span>
+                </button>
+                <button class="btn btn-operation" data-operation="fractions">
+                    <span class="icon">½</span>
+                    <span class="text">Fractions</span>
+                </button>
+                <button class="btn btn-operation" data-operation="mixed">
+                    <span class="icon">🎲</span>
+                    <span class="text">Mixed</span>
+                </button>
+            </div>
+            <button class="btn btn-back" id="backToHomeBtn">🏠 Back to Home</button>
+        </div>
+        
+        <!-- Challenge Screen -->
+        <div id="challengeScreen" class="screen">
+            <div class="challenge-header">
+                <div class="progress-bar">
+                    <div class="progress" id="progressBar"></div>
+                </div>
+                <div class="timer" id="timer">⏱️ 30s</div>
+            </div>
+            
+            <div class="question-container">
+                <div class="question" id="question"></div>
+                <div class="options" id="options"></div>
+            </div>
+            
+            <div class="confetti-container" id="confettiContainer"></div>
+        </div>
+        
+        <!-- Reward Screen -->
+        <div id="rewardScreen" class="screen">
+            <div class="reward-content">
+                <div class="reward-message" id="rewardMessage">Great Job! 🎉</div>
+                <div class="badge-container">
+                    <div class="badge" id="badge">
+                        <div class="badge-icon">🏆</div>
+                        <div class="badge-title">Math Explorer</div>
+                    </div>
+                </div>
+                <div class="points-earned">You earned <span id="points">10</span> points!</div>
+                
+                <div class="reward-actions">
+                    <button class="btn btn-play" id="nextChallengeBtn">Next Challenge</button>
+                    <button class="btn btn-back" id="backToOperationsBtn">📚 Choose Another Operation</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Progress Screen -->
+        <div id="progressScreen" class="screen">
+            <h2 id="progressTitle">My Progress</h2>
+            
+            <div class="progress-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-value" id="totalPoints">0</div>
+                    <div class="stat-label">Total Points</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">❓</div>
+                    <div class="stat-value" id="questionsAnswered">0</div>
+                    <div class="stat-label">Questions Answered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">✅</div>
+                    <div class="stat-value" id="correctAnswers">0</div>
+                    <div class="stat-label">Correct Answers</div>
+                </div>
+            </div>
+            
+            <h3 class="skills-title">Operation Skills</h3>
+            <div id="operationProgress" class="skills-container"></div>
+            
+            <button class="btn btn-back" id="backToHomeFromProgressBtn">🏠 Back to Home</button>
+        </div>
+    </div>
+
+    <audio id="correctSound" src="https://assets.mixkit.co/sfx/preview/mixkit-correct-answer-tone-2870.mp3"></audio>
+    <audio id="wrongSound" src="https://assets.mixkit.co/sfx/preview/mixkit-wrong-answer-fail-notification-946.mp3"></audio>
+    <audio id="winSound" src="https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

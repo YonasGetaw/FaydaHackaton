@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Learning App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Navigation -->
+        <nav class="game-nav">
+            <button class="nav-btn active" data-page="home">🏠 Home</button>
+            <button class="nav-btn" data-page="coloring">🎨 Color</button>
+            <button class="nav-btn" data-page="animals">🦁 Animals</button>
+            <button class="nav-btn" data-page="shapes">🔷 Shapes</button>
+        </nav>
+
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="welcome-screen">
+                <h1>Welcome to Kids Learning!</h1>
+                <div class="bouncing-emoji">🎉</div>
+                <p>Choose a game from the menu above!</p>
+            </div>
+        </section>
+
+        <!-- Coloring Page -->
+        <section id="coloring" class="page">
+            <h1>🎨 Coloring Fun</h1>
+            <div class="coloring-controls">
+                <div class="color-palette">
+                    <div class="color-option selected" style="background-color: red"></div>
+                    <div class="color-option" style="background-color: blue"></div>
+                    <div class="color-option" style="background-color: green"></div>
+                    <div class="color-option" style="background-color: yellow"></div>
+                </div>
+                <div class="tools">
+                    <button id="clear-btn">Clear</button>
+                    <button id="save-btn">Save</button>
+                </div>
+            </div>
+            <canvas id="drawing-canvas"></canvas>
+            <div class="feedback"></div>
+        </section>
+
+        <!-- Animals Matching Game -->
+        <section id="animals" class="page">
+            <h1>🦁 Animal Matching</h1>
+            <div class="game-area">
+                <div class="animal-images">
+                    <img src="https://cdn-icons-png.flaticon.com/512/616/616430.png" class="animal" data-animal="cat" draggable="true">
+                    <img src="https://cdn-icons-png.flaticon.com/512/616/616438.png" class="animal" data-animal="dog" draggable="true">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3069/3069172.png" class="animal" data-animal="elephant" draggable="true">
+                </div>
+                <div class="animal-names">
+                    <div class="name-box" data-animal="cat">Cat</div>
+                    <div class="name-box" data-animal="dog">Dog</div>
+                    <div class="name-box" data-animal="elephant">Elephant</div>
+                </div>
+            </div>
+            <div class="feedback"></div>
+        </section>
+
+        <!-- Shapes Matching Game -->
+        <section id="shapes" class="page">
+            <h1>🔷 Shape Matching</h1>
+            <div class="game-area">
+                <div class="shapes-container">
+                    <div class="shape circle" draggable="true"></div>
+                    <div class="shape square" draggable="true"></div>
+                    <div class="shape triangle" draggable="true"></div>
+                </div>
+                <div class="shape-outlines">
+                    <div class="outline circle-outline">Circle</div>
+                    <div class="outline square-outline">Square</div>
+                    <div class="outline triangle-outline">Triangle</div>
+                </div>
+            </div>
+            <div class="feedback"></div>
+        </section>
+    </div>
+
+    <audio id="correct-sound" src="https://www.soundjay.com/buttons/sounds/button-09.mp3"></audio>
+    <audio id="wrong-sound" src="https://www.soundjay.com/buttons/sounds/button-10.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

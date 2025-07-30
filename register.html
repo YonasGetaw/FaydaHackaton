@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="title.register">Ethiopis - Register</title>
+
+  <!-- Favicon Links -->
+  <link rel="icon" type="image/x-icon" href="./images/favicon_io/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon_io/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./images/favicon_io/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+  <link rel="manifest" href="./images/favicon_io/site.webmanifest">
+
+  <!-- Preload important resources -->
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="js/script.js" as="script">
+  <link rel="preload" href="js/i18n.js" as="script">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo-placeholder">
+      <img src="./images/new logo.png" alt="Ethiopis Logo" width="150" height="60" loading="lazy"/>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="login.html" data-i18n="nav.login">Login</a>
+      <a href="register.html" data-i18n="nav.register">Register</a>
+      <button id="language-toggle" class="language-toggle" aria-label="Toggle language">EN | አማ</button>
+    </nav>
+    <button class="hamburger-menu" aria-label="Mobile menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Main Content -->
+  <main class="register-page">
+    <div class="register-container">
+      <div class="register-header">
+        <h1 data-i18n="register.title">Parent Registration</h1>
+        <p data-i18n="register.subtitle">Create an account to register your child for Ethiopis</p>
+      </div>
+
+      <form id="registration-form" class="register-form">
+        <!-- Parent Information -->
+        <fieldset class="form-section">
+          <legend data-i18n="register.parent_info">Parent Information</legend>
+          
+          <div class="form-group">
+            <label for="parent-name" data-i18n="register.parent_name">Parent Full Name</label>
+            <input type="text" id="parent-name" name="parent-name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone" data-i18n="register.phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" pattern="^(\+251|0)[79][0-9]{8}$" required>
+            <small class="error-message" data-i18n="register.phone_error">Please enter a valid Ethiopian phone number (e.g. +251911223344, +251711223344, 0911223344 or 0711223344)</small>
+          </div>
+          
+          <div class="form-group password-group">
+            <label for="password" data-i18n="register.password">Password</label>
+            <input type="password" id="password" name="password" minlength="5" required>
+            <small class="error-message" data-i18n="register.password_error">Password must be at least 5 characters</small>
+          </div>
+          
+          <div class="form-group password-group">
+            <label for="confirm-password" data-i18n="register.confirm_password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <small class="error-message" data-i18n="register.confirm_error">Passwords do not match</small>
+          </div>
+        </fieldset>
+
+        <!-- Child Information -->
+        <fieldset class="form-section">
+          <legend data-i18n="register.child_info">Child Information</legend>
+          
+          <div class="form-group">
+            <label for="child-name" data-i18n="register.child_name">Child Full Name</label>
+            <input type="text" id="child-name" name="child-name" required>
+          </div>
+          
+          <div class="form-group">
+            <label data-i18n="register.age_group">Age Group</label>
+            <div class="age-group-options">
+              <label class="age-option">
+                <input type="radio" name="age-group" value="4-6" required>
+                <span class="age-bubble">
+                  <span class="age-range" data-i18n="register.age_4_6">4-6</span>
+                  <span class="age-label" data-i18n="register.age_preschool">Preschool & Kindergarten</span>
+                </span>
+              </label>
+              
+              <label class="age-option">
+                <input type="radio" name="age-group" value="7-9">
+                <span class="age-bubble">
+                  <span class="age-range" data-i18n="register.age_7_9">7-9</span>
+                  <span class="age-label" data-i18n="register.age_lower">Lower Primary</span>
+                </span>
+              </label>
+              
+              <label class="age-option">
+                <input type="radio" name="age-group" value="10-12">
+                <span class="age-bubble">
+                  <span class="age-range" data-i18n="register.age_10_12">10-12</span>
+                  <span class="age-label" data-i18n="register.age_upper">Upper Primary</span>
+                </span>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" class="register-button" data-i18n="register.submit">Register My Child</button>
+          <p class="login-link">
+            <span data-i18n="register.have_account"></span>
+            <a href="login.html" data-i18n="register.login_link"></a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p data-i18n="footer.copyright">© 2025 Ethiopis. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/i18n.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

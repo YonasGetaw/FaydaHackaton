@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethiopian Kids Learning Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">🇪🇹 Learn Ethiopia</div>
+      <div class="star-counter">⭐ <span id="stars">0</span> Stars</div>
+    </div>
+  </header>
+
+  <main class="game-grid">
+    <div class="game-card math" data-game="math">
+      <div class="card-icon">🧮</div>
+      <h3>Math Wizards</h3>
+      <p>Solve with Coffee Beans!</p>
+    </div>
+
+    <div class="game-card lang" data-game="lang">
+      <div class="card-icon">🔤</div>
+      <h3>Amharic-English</h3>
+      <p>Word Matching</p>
+    </div>
+
+    <div class="game-card history" data-game="history">
+      <div class="card-icon">🏛️</div>
+      <h3>History Quest</h3>
+      <p>Sort Timeline!</p>
+    </div>
+
+    <div class="game-card science" data-game="science">
+      <div class="card-icon">🧪</div>
+      <h3>Science Lab</h3>
+      <p>Mix Colors!</p>
+    </div>
+
+    <div class="game-card geo" data-game="geo">
+      <div class="card-icon">🌍</div>
+      <h3>Ethiopia Map</h3>
+      <p>Explore Regions!</p>
+    </div>
+  </main>
+
+  <!-- Modals for each game -->
+  <div class="modal" id="mathModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="mathContent"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="langModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="langContent"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="historyModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="historyContent"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="scienceModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="scienceContent"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="geoModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="geoContent"></div>
+    </div>
+  </div>
+
+  <!-- Feedback Container (for custom messages) -->
+  <div id="feedbackContainer" class="feedback-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="title.age7_9">Ethiopis - Age 7-9 Learning</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon_io/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/age-7-9.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="logo-placeholder">
+        <img src="./images/new logo.png" alt="Ethiopis Logo" width="150" height="60" loading="lazy"/>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+        <button id="logout-button" data-i18n="nav.logout">Logout</button>
+        <button id="language-toggle" class="language-toggle" aria-label="Toggle language">EN | አማ</button>
+    </nav>
+    <button class="hamburger-menu" aria-label="Mobile menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</header>
+  <main class="learning-portal">
+    <div class="session-timer-container">
+      <div class="session-timer">
+        <div class="timer-header">
+          <i class="fas fa-clock"></i>
+          <span data-i18n="session.timer_title">Session Timer</span>
+        </div>
+        <div class="timer-display">
+          <span id="session-time">45:00</span>
+          <div class="timer-progress">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <h1><i class="fas fa-user-graduate"></i> <span data-i18n="age7_9.title">Age Group 7-9 (Lower Primary)</span></h1>
+    
+    <!-- Reading & Writing Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-book-reader"></i>
+        <h2 data-i18n="age7_9.reading_writing">Reading & Writing</h2>
+      </div>
+      <div class="portfolio-grid">
+        
+        <div id="videoModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <video controls width="100%">
+              <source src="" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <a href="./newgame/Age 7-9/Reading_Writing/amharicReading/index.html"./videos/amharic-reading-lesson.mp4">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/read.png');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.amharic_reading">Amharic Reading</h3>
+              <p class="portfolio-description" data-i18n="age7_9.amharic_reading_desc">
+                Practice reading simple Amharic sentences and stories
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./newgame/Age 7-9/Reading_Writing/englishreading/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/engl1.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.english_reading">English Reading</h3>
+              <p class="portfolio-description" data-i18n="age7_9.english_reading_desc">Short stories with comprehension questions</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./newgame/Age 7-9/Reading_Writing/vocabularybuilder/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/vocab1.avif');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.vocabulary">Vocabulary Builder</h3>
+              <p class="portfolio-description" data-i18n="age7_9.vocabulary_desc">Learn new words in Amharic and English</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Mathematics Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-calculator"></i>
+        <h2 data-i18n="age7_9.mathematics">Mathematics</h2>
+      </div>
+      <div class="portfolio-grid">
+        <a href="./newgame/Age 7-9/basic-maths/Addtion-subtraction/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/add.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.add_subtract">Addition & Subtraction</h3>
+              <p class="portfolio-description" data-i18n="age7_9.add_subtract_desc">Practice with numbers up to 100</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 7-9/basic-maths/multiplication/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/mul.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.multiplication">Multiplication</h3>
+              <p class="portfolio-description" data-i18n="age7_9.multiplication_desc">Learn times tables up to 12</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 7-9/basic-maths/mathsgame/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/math1.webp');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-gamepad"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.math_games">Math Games</h3>
+              <p class="portfolio-description" data-i18n="age7_9.math_games_desc">Fun interactive math challenges</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    
+    <!-- Science & Nature Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-flask"></i>
+        <h2 data-i18n="age7_9.science_nature">Science & Nature</h2>
+      </div>
+      <div class="portfolio-grid">
+        <a href="./newgame/Age 7-9/Science-Nature-Facts/humanbody/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/body.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.human_body">Human Body</h3>
+              <p class="portfolio-description" data-i18n="age7_9.human_body_desc">Learn about organs and systems</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 7-9/Science-Nature-Facts/spacescience/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/solar.jpeg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.space_science">Space Science</h3>
+              <p class="portfolio-description" data-i18n="age7_9.space_science_desc">Planets, stars and our solar system</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 7-9/Science-Nature-Facts/our-envonment/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/env.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.environment">Our Environment</h3>
+              <p class="portfolio-description" data-i18n="age7_9.environment_desc">Ecosystems and conservation</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    
+    <!-- Moral & Social Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-hands-helping"></i>
+        <h2 data-i18n="age7_9.moral_social">Moral & Social Lessons</h2>
+      </div>
+      <div class="portfolio-grid">
+        <a href="./newgame/Age 7-9/Moral-Social-Lesson/goodmanners/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/manner.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.good_manners">Good Manners</h3>
+              <p class="portfolio-description" data-i18n="age7_9.good_manners_desc">Being polite and respectful</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 7-9/Moral-Social-Lesson/teamwork/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/team.jfif');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.teamwork">Teamwork</h3>
+              <p class="portfolio-description" data-i18n="age7_9.teamwork_desc">Working together effectively</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 7-9/Moral-Social-Lesson/honesty/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/hon.jfif');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.honesty">Honesty</h3>
+              <p class="portfolio-description" data-i18n="age7_9.honesty_desc">Why telling the truth matters</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    
+    <!-- History & Culture Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-landmark"></i>
+        <h2 data-i18n="age7_9.history_culture">History & Culture</h2>
+      </div>
+      <div class="portfolio-grid">
+        <a href="./newgame/Age 7-9/History-Culture/ethiopianhistory/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/his.png');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.ethiopian_history">Ethiopian History</h3>
+              <p class="portfolio-description" data-i18n="age7_9.ethiopian_history_desc">Important events and periods</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 7-9/History-Culture/historicalfigures/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/cul1.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.cultural_traditions">Cultural Traditions</h3>
+              <p class="portfolio-description" data-i18n="age7_9.cultural_traditions_desc">Festivals, food and customs</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 7-9/History-Culture/culturaltradition/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/min.jfif');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.historical_figures">Historical Figures</h3>
+              <p class="portfolio-description" data-i18n="age7_9.historical_figures_desc">Ethiopian leaders and heroes</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    
+    <!-- Coding & Technology Section -->
+    <section class="category-section">
+      <div class="category-title">
+        <i class="fas fa-laptop-code"></i>
+        <h2 data-i18n="age7_9.coding_tech">Coding & Technology</h2>
+      </div>
+      <div class="portfolio-grid">
+        <a href="./newgame/Age 7-9/Basic-Coding-for-Kids/BlockCoding/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/pro.jpg');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.block_coding">Block Coding</h3>
+              <p class="portfolio-description" data-i18n="age7_9.block_coding_desc">Introduction to programming concepts</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 7-9/Basic-Coding-for-Kids/Digitalskills/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/skill.png');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-play"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.digital_skills">Digital Skills</h3>
+              <p class="portfolio-description" data-i18n="age7_9.digital_skills_desc">Basic computer and internet skills</p>
+            </div>
+          </div>
+        </a>
+        
+        <a href="./newgame/Age 7-9/Basic-Coding-for-Kids/techProgect/index.html">
+          <div class="portfolio-item">
+            <div class="portfolio-image" style="background-image: url('./images/tech.jfif');">
+              <div class="portfolio-overlay">
+                <div class="play-button"><i class="fas fa-gamepad"></i></div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3 class="portfolio-title" data-i18n="age7_9.tech_projects">Tech Projects</h3>
+              <p class="portfolio-description" data-i18n="age7_9.tech_projects_desc">Hands-on technology activities</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="content-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close modal">&times;</button>
+      <div class="modal-body">
+        <iframe id="modal-iframe" width="100%" height="500" frameborder="0" allowfullscreen
+          title="Content Viewer" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <video controls width="100%">
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p data-i18n="footer.copyright">© 2025 Ethiopis. All rights reserved.</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/age-7-9.js"></script>
+  <script src="js/auth-check.js"></script>
+</body>
+</html>

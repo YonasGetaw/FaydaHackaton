@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kids Coloring Book</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="coloring-area">
+            <h1>🖍️ Coloring Book</h1>
+            <p class="instruction">Click or touch to color the pictures!</p>
+            
+            <div class="picture-selector">
+                <button onclick="changePicture('animals')">🐶 Animals</button>
+                <button onclick="changePicture('vehicles')">🚗 Vehicles</button>
+                <button onclick="changePicture('shapes')">🔷 Shapes</button>
+                <button onclick="changePicture('fruits')">🍎 Fruits</button>
+            </div>
+            
+            <canvas id="coloringCanvas" width="500" height="400"></canvas>
+            
+            <div class="color-palette">
+                <button onclick="changeColor('#FF5252')" style="background:#FF5252"></button>
+                <button onclick="changeColor('#4285F4')" style="background:#4285F4"></button>
+                <button onclick="changeColor('#4CAF50')" style="background:#4CAF50"></button>
+                <button onclick="changeColor('#FFEB3B')" style="background:#FFEB3B"></button>
+                <button onclick="changeColor('#FF9800')" style="background:#FF9800"></button>
+                <button onclick="changeColor('#9C27B0')" style="background:#9C27B0"></button>
+                <button onclick="changeColor('#000000')" style="background:#000000"></button>
+                <button onclick="changeColor('#FFFFFF')" style="background:#FFFFFF; border:1px solid #ccc"></button>
+            </div>
+            
+            <div class="action-buttons">
+                <button onclick="clearCanvas()" class="clear-btn">🧹 Clear</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

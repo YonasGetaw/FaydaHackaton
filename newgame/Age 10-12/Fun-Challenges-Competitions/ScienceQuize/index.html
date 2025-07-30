@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Quiz Challenge</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Science Quiz</h1>
+            <h2 id="subtitle">Explore Scientific Knowledge</h2>
+            <button id="language-toggle">አማርኛ / Amharic</button>
+        </header>
+
+        <main>
+            <div class="quiz-container">
+                <div class="question-card">
+                    <h3 id="question-number">Question 1 of 5</h3>
+                    <p id="question-text">Which planet is known as the Red Planet?</p>
+                    <div class="options" id="options-container">
+                        <!-- Options will be added by JavaScript -->
+                    </div>
+                    <button id="submit-answer" disabled>Submit Answer</button>
+                    <div class="feedback hidden" id="feedback"></div>
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+
+            <div class="score-container">
+                <span id="score-label">Score:</span>
+                <span id="score">0</span>/5
+            </div>
+        </main>
+
+        <footer>
+            <p id="more-challenges">More challenges: 
+                <a href="#" class="footer-link" id="math-link">Math Contest</a> | 
+                <a href="#" class="footer-link" id="spelling-link">Spelling Bee</a>
+            </p>
+            <p id="footer-text">Discover the wonders of science</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

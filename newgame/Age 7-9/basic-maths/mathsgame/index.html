@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Adventure</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Math Adventure</h1>
+        <button id="langBtn" class="btn">በአማርኛ</button>
+    </header>
+
+    <main>
+        <div class="game-container">
+            <div class="character" id="character">🧙‍♂️</div>
+            
+            <div class="problem" id="problem">
+                <span id="num1">5</span>
+                <span id="operator">+</span>
+                <span id="num2">3</span>
+                <span>=</span>
+                <input type="number" id="answer" placeholder="?">
+            </div>
+
+            <div class="controls">
+                <button id="checkBtn" class="btn">Check</button>
+                <button id="newBtn" class="btn">New Problem</button>
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar" id="progressBar"></div>
+                <p id="level">Level: 1</p>
+                <p id="score">Score: 0</p>
+            </div>
+
+            <div class="operations">
+                <button class="op-btn active" data-op="add">+</button>
+                <button class="op-btn" data-op="subtract">-</button>
+                <button class="op-btn" data-op="multiply">×</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>

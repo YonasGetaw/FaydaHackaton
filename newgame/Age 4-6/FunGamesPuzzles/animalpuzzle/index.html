@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Matching Game</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐶 Animal Friends Matching</h1>
+            <div class="game-info">
+                <span>Matches: <span id="matches">0</span>/6</span>
+                <button id="reset-btn">🔄 Play Again</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="game-board" id="gameBoard"></div>
+        </main>
+    </div>
+
+    <!-- Animal sounds -->
+    <audio id="lion-sound" src="https://www.soundjay.com/animals/sounds/lion-01.mp3"></audio>
+    <audio id="dog-sound" src="https://www.soundjay.com/animals/sounds/dog-bark-01.mp3"></audio>
+    <audio id="cat-sound" src="https://www.soundjay.com/animals/sounds/cat-meow-02.mp3"></audio>
+    <audio id="cow-sound" src="https://www.soundjay.com/animals/sounds/cow-01.mp3"></audio>
+    <audio id="duck-sound" src="https://www.soundjay.com/animals/sounds/duck-01.mp3"></audio>
+    <audio id="sheep-sound" src="https://www.soundjay.com/animals/sounds/sheep-01.mp3"></audio>
+    <audio id="correct-sound" src="https://www.soundjay.com/buttons/sounds/button-09.mp3"></audio>
+
+    <script src="./script.js"></script>
+</body>
+</html>

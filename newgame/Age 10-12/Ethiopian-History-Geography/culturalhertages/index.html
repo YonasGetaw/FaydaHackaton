@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethiopian Cultural Heritage</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Ethiopian Cultural Heritage</h1>
+            <h2 id="subtitle">Treasures of Our Ancestors</h2>
+            <button id="language-toggle">አማርኛ / Amharic</button>
+        </header>
+
+        <main>
+            <div class="heritage-container">
+                <div class="heritage-card">
+                    <div class="heritage-image" style="background-image: url('../culturalhertages/lalibela.png')"></div>
+                    <h3 id="heritage1-title">Rock-Hewn Churches of Lalibela</h3>
+                    <p class="heritage-description" id="heritage1-desc">11 medieval monolithic churches carved out of rock in the 12th century under King Lalibela.</p>
+                    <button class="learn-more" id="heritage1-btn">Learn More</button>
+                    <div class="details hidden" id="heritage1-details">
+                        <p>Recognized as a UNESCO World Heritage Site, these churches represent one of Christianity's most important sites.</p>
+                        <p>Annual pilgrimage site during Ethiopian Christmas (Genna) on January 7.</p>
+                    </div>
+                </div>
+
+                <div class="heritage-card">
+                    <div class="heritage-image" style="background-image: url('../culturalhertages/image.png')"></div>
+                    <h3 id="heritage2-title">Axum Obelisks</h3>
+                    <p class="heritage-description" id="heritage2-desc">Giant stone monuments dating back to 4th century AD, marking royal tombs.</p>
+                    <button class="learn-more" id="heritage2-btn">Learn More</button>
+                    <div class="details hidden" id="heritage2-details">
+                        <p>The tallest standing obelisk reaches 24 meters and weighs 160 tons.</p>
+                        <p>Symbols of the ancient Axumite civilization's architectural prowess.</p>
+                    </div>
+                </div>
+
+                <div class="heritage-card">
+                    <div class="heritage-image" style="background-image: url('../culturalhertages/harar.png')"></div>
+                    <h3 id="heritage3-title">Historic Harar Jugol</h3>
+                    <p class="heritage-description" id="heritage3-desc">Walled city with 82 mosques and 102 shrines, center of Islamic culture.</p>
+                    <button class="learn-more" id="heritage3-btn">Learn More</button>
+                    <div class="details hidden" id="heritage3-details">
+                        <p>Known for its unique house designs and hyena feeding tradition.</p>
+                        <p>UNESCO World Heritage Site since 2006.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-container hidden" id="quiz">
+                <h3 id="quiz-title">Cultural Knowledge Test</h3>
+                <div class="question">
+                    <p id="q1-text">1. What is unique about Lalibela's churches?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="a"> <span id="q1-option1">They're made of gold</span></label>
+                        <label><input type="radio" name="q1" value="b"> <span id="q1-option2">Carved from single rock blocks</span></label>
+                        <label><input type="radio" name="q1" value="c"> <span id="q1-option3">Built underwater</span></label>
+                    </div>
+                </div>
+                <button class="submit-quiz" id="submit-quiz">Submit Answers</button>
+            </div>
+
+            <div class="results hidden" id="results">
+                <h3 id="results-title">Your Results</h3>
+                <div class="score">Score: <span id="score">0</span>/1</div>
+                <div class="feedback" id="feedback"></div>
+                <button class="retry-quiz" id="retry-quiz">Try Again</button>
+            </div>
+        </main>
+
+        <footer>
+            <p id="more-topics">More topics: 
+                <a href="#" class="footer-link" id="regions-link">Ethiopian Regions</a> | 
+                <a href="#" class="footer-link" id="history-link">Historical Events</a>
+            </p>
+            <p id="footer-text">Preserving Ethiopia's rich cultural legacy</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

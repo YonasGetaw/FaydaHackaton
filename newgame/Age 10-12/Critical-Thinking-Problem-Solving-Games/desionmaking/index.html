@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critical Thinking - Decision Making</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Decision Making</h1>
+            <h2 id="subtitle">Weigh Your Options</h2>
+            <button id="language-toggle">አማርኛ / Amharic</button>
+        </header>
+
+        <main>
+            <div class="scenario-container">
+                <div class="scenario-card">
+                    <h3 id="scenario1-title">Scenario #1</h3>
+                    <p class="scenario-text" id="scenario1-text">You're offered a high-paying job in another city, but it would mean leaving your family and friends behind. What do you do?</p>
+                    <div class="options" id="options1">
+                        <label><input type="radio" name="decision1" value="accept"> <span>Accept the job</span></label>
+                        <label><input type="radio" name="decision1" value="negotiate"> <span>Negotiate remote work</span></label>
+                        <label><input type="radio" name="decision1" value="decline"> <span>Decline the offer</span></label>
+                    </div>
+                    <button class="analyze-btn" id="analyze-btn1">Analyze Decision</button>
+                    <div class="analysis hidden" id="analysis1"></div>
+                </div>
+
+                <div class="scenario-card">
+                    <h3 id="scenario2-title">Scenario #2</h3>
+                    <p class="scenario-text" id="scenario2-text">Your team is divided on two approaches to a project. Half want the safe, proven method, half want an innovative but risky approach. How do you decide?</p>
+                    <div class="options" id="options2">
+                        <label><input type="radio" name="decision2" value="safe"> <span>Choose the safe method</span></label>
+                        <label><input type="radio" name="decision2" value="innovative"> <span>Choose the innovative approach</span></label>
+                        <label><input type="radio" name="decision2" value="combine"> <span>Combine elements of both</span></label>
+                    </div>
+                    <button class="analyze-btn" id="analyze-btn2">Analyze Decision</button>
+                    <div class="analysis hidden" id="analysis2"></div>
+                </div>
+            </div>
+
+            <button class="new-scenario" id="new-scenario">New Scenario</button>
+        </main>
+
+        <footer>
+            <p id="more-challenges">More challenges: 
+                <a href="#" class="footer-link" id="teaser-link">Brain Teasers</a> | 
+                <a href="#" class="footer-link" id="puzzle-link">Logical Puzzles</a>
+            </p>
+            <p id="footer-text">Develop your critical thinking skills</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

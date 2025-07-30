@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Geometry Practice</h1>
+        <p class="subtitle">For Ages 10-12</p>
+    </header>
+
+    <main>
+        <div class="lesson-container">
+            <div id="geometryLesson">
+                <h2>Area of Shapes</h2>
+                <div class="formulas">
+                    <p><strong>Rectangle:</strong> Area = length × width</p>
+                    <p><strong>Triangle:</strong> Area = ½ × base × height</p>
+                    <p><strong>Circle:</strong> Area = π × radius² (π ≈ 3.14)</p>
+                    <p><strong>Parallelogram:</strong> Area = base × height</p>
+                </div>
+                <button id="startButton" class="start-btn">Start Practice</button>
+            </div>
+
+            <div id="geometryPractice" style="display:none;">
+                <p id="geometryQuestion"></p>
+                <div id="geometryDiagram"></div>
+                <input type="number" id="geometryAnswer" placeholder="Enter your answer...">
+                <button id="submitAnswer" class="submit-btn">Submit</button>
+                <div id="geometryResult"></div>
+                <div id="geometryStats">
+                    <p>Score: <span id="geometryScore">0</span></p>
+                    <p>Question: <span id="geometryCount">1</span>/5</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><a href="../index.html" class="footer-link">Back to Main Menu</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

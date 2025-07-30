@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Safety</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Internet Safety</h1>
+            <h2 id="subtitle">Stay Safe Online</h2>
+            <button id="language-toggle">አማርኛ / Amharic</button>
+        </header>
+
+        <main>
+            <div class="lesson-container">
+                <div class="lesson-card" data-lesson="passwords">
+                    <div class="lesson-icon">🔒</div>
+                    <h3 id="passwords-title">Strong Passwords</h3>
+                    <p id="passwords-desc">Create passwords with at least 12 characters, mixing letters, numbers, and symbols.</p>
+                    <button class="learn-more" data-quiz="passwords">Learn More</button>
+                </div>
+
+                <div class="lesson-card" data-lesson="phishing">
+                    <div class="lesson-icon">🛡️</div>
+                    <h3 id="phishing-title">Phishing Scams</h3>
+                    <p id="phishing-desc">Never click suspicious links or share personal info in unexpected messages.</p>
+                    <button class="learn-more" data-quiz="phishing">Learn More</button>
+                </div>
+
+                <div class="lesson-card" data-lesson="privacy">
+                    <div class="lesson-icon">👤</div>
+                    <h3 id="privacy-title">Privacy Settings</h3>
+                    <p id="privacy-desc">Adjust social media privacy settings to control who sees your information.</p>
+                    <button class="learn-more" data-quiz="privacy">Learn More</button>
+                </div>
+            </div>
+
+            <div class="quiz-container hidden" id="quiz">
+                <h3 id="quiz-title">Test Your Knowledge</h3>
+                <div class="question" id="question1">
+                    <p id="q1-text">1. What makes a strong password?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="a"> <span id="q1-option1">Your pet's name</span></label>
+                        <label><input type="radio" name="q1" value="b"> <span id="q1-option2">Random letters, numbers, and symbols</span></label>
+                        <label><input type="radio" name="q1" value="c"> <span id="q1-option3">Your birthday</span></label>
+                    </div>
+                </div>
+                <div class="question hidden" id="question2">
+                    <p id="q2-text">2. What is a common sign of a phishing email?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="a"> <span id="q2-option1">It comes from a known contact</span></label>
+                        <label><input type="radio" name="q2" value="b"> <span id="q2-option2">It asks for personal information urgently</span></label>
+                        <label><input type="radio" name="q2" value="c"> <span id="q2-option3">It has perfect spelling and grammar</span></label>
+                    </div>
+                </div>
+                <div class="question hidden" id="question3">
+                    <p id="q3-text">3. Why should you review privacy settings?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="a"> <span id="q3-option1">To make your account less secure</span></label>
+                        <label><input type="radio" name="q3" value="b"> <span id="q3-option2">To control who can see your information</span></label>
+                        <label><input type="radio" name="q3" value="c"> <span id="q3-option3">To increase the number of ads you see</span></label>
+                    </div>
+                </div>
+                <button class="submit-quiz">Submit Answers</button>
+            </div>
+
+            <div class="results hidden" id="results">
+                <h3 id="results-title">Your Results</h3>
+                <div class="score">Score: <span id="score">0</span>/3</div>
+                <div class="feedback" id="feedback"></div>
+                <button class="retry-quiz">Try Again</button>
+            </div>
+        </main>
+
+        <footer>
+            <p id="resources-text">More resources: 
+                <a href="#" class="footer-link" id="privacy-link">Online Privacy Guide</a> | 
+                <a href="#" class="footer-link" id="security-link">Security Tips</a>
+            </p>
+            <p id="footer-text">Made with ❤️ for digital safety</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

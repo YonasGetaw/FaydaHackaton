@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Reading - For Kids</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="main-title">English Reading Practice</h1>
+        <button id="language-toggle" class="btn">አማርኛ</button>
+    </header>
+
+    <main>
+        <div class="lesson-container">
+            <div class="lesson-card">
+                <h2 id="lesson1-title">Lesson 1: Alphabet Sounds</h2>
+                <div class="alphabet-display">
+                    <span>A</span>
+                    <span>B</span>
+                    <span>C</span>
+                    <span>D</span>
+                    <span>E</span>
+                </div>
+                <p id="lesson1-text">Let's practice the first five letters of the English alphabet. What sounds do they make?</p>
+                <button class="practice-btn" id="practice1-btn">Hear Sounds</button>
+            </div>
+
+            <div class="lesson-card">
+                <h2 id="lesson2-title">Lesson 2: Simple Words</h2>
+                <div class="word-examples">
+                    <div class="word-card" data-word="cat">
+                        <h3>Cat</h3>
+                        <p id="word1-text">🐱</p>
+                    </div>
+                    <div class="word-card" data-word="dog">
+                        <h3>Dog</h3>
+                        <p id="word2-text">🐶</p>
+                    </div>
+                    <div class="word-card" data-word="sun">
+                        <h3>Sun</h3>
+                        <p id="word3-text">☀️</p>
+                    </div>
+                </div>
+                <button class="practice-btn" id="practice2-btn">Read Words</button>
+            </div>
+
+            <div class="lesson-card">
+                <h2 id="lesson3-title">Lesson 3: Short Sentences</h2>
+                <div class="sentence-example" data-sentence="The cat sat.">
+                    <p class="english-sentence">The cat sat.</p>
+                    <p id="sentence1-text">A simple sentence with 3 words.</p>
+                </div>
+                <div class="sentence-example" data-sentence="I see the sun.">
+                    <p class="english-sentence">I see the sun.</p>
+                    <p id="sentence2-text">A 4-word sentence.</p>
+                </div>
+                <button class="practice-btn" id="practice3-btn">Read Aloud</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p id="footer-text">Reading every day helps you become a better reader!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

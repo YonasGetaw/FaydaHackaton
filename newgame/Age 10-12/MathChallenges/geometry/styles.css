@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.lesson-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.next-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.next-btn:hover {
+    background-color: #45a049;
+}
+
+#geometryQuestion {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#geometryDiagram {
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 2rem;
+    white-space: pre-line;
+    line-height: 1.5;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#geometryResult {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.correct {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.incorrect {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+#geometryStats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-link {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+.footer-link:hover {
+    color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .lesson-container {
+        padding: 1.5rem;
+    }
+}/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+main {
+    padding: 0 2rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.lesson-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulas {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+}
+
+.start-btn, .submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.start-btn:hover, .submit-btn:hover {
+    background-color: #45a049;
+}
+
+#geometryQuestion {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#geometryDiagram {
+    margin: 1.5rem auto;
+    text-align: center;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shape-container {
+    position: relative;
+    margin: 20px auto;
+}
+
+.rectangle {
+    background-color: #4CAF50;
+    opacity: 0.7;
+    margin: 0 auto;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: solid transparent;
+    border-right: solid transparent;
+    border-bottom: solid #4CAF50;
+    opacity: 0.7;
+    margin: 0 auto;
+}
+
+.circle {
+    background-color: #4CAF50;
+    opacity: 0.7;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.parallelogram {
+    background-color: #4CAF50;
+    opacity: 0.7;
+    transform: skew(-20deg);
+    margin: 0 auto;
+}
+
+.dimension {
+    position: absolute;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.width {
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.height {
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+    writing-mode: vertical-rl;
+}
+
+.base {
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.radius {
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#geometryResult {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.correct {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.incorrect {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+#geometryStats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-link {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+.footer-link:hover {
+    color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .lesson-container {
+        padding: 1.5rem;
+    }
+    
+    .dimension.height {
+        right: -30px;
+    }
+}

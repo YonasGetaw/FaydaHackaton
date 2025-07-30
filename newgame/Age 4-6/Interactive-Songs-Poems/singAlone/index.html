@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethiopian Sing-Along</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ethiopian Sing-Along</h1>
+            <h2>Sing with your children!</h2>
+        </header>
+
+        <main>
+            <div class="song-player">
+                <div class="song-info">
+                    <h3 id="song-title">Fiker Eske Mekabir</h3>
+                    <div class="lyrics" id="song-lyrics">
+                        <p>Fiker eske mekabir, fiker eske mekabir,</p>
+                        <p>Yene konjo lijé, yene konjo lijé,</p>
+                        <p>Ene new yene fikir, ene new yene fikir,</p>
+                        <p>Fiker eske mekabir, fiker eske mekabir!</p>
+                    </div>
+                </div>
+                <div class="player-controls">
+                    <button id="play-btn" class="control-btn">▶ Play</button>
+                    <button id="pause-btn" class="control-btn">⏸ Pause</button>
+                    <button id="stop-btn" class="control-btn">⏹ Stop</button>
+                    <div class="volume-control">
+                        <label for="volume">Volume:</label>
+                        <input type="range" id="volume" min="0" max="1" step="0.1" value="0.7">
+                    </div>
+                </div>
+                <div class="song-selector">
+                    <h4>Choose a song:</h4>
+                    <select id="song-select">
+                        <option value="fiker">Fiker Eske Mekabir</option>
+                        <option value="tezeta">Tezeta</option>
+                        <option value="bati">Bati</option>
+                        <option value="ambassel">Ambassel</option>
+                    </select>
+                </div>
+                <audio id="song-audio"></audio>
+            </div>
+        </main>
+
+        <footer>
+            <p>More songs: 
+                <a href="#" class="song-link">Ertale</a> | 
+                <a href="#" class="song-link">Tizita</a>
+            </p>
+            <p>Made with ❤️ for Ethiopian children</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critical Thinking - Logical Puzzles</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Logical Puzzles</h1>
+            <h2 id="subtitle">Exercise Your Reasoning</h2>
+            <button id="language-toggle">አማርኛ / Amharic</button>
+        </header>
+
+        <main>
+            <div class="puzzle-container">
+                <div class="puzzle-card">
+                    <h3 id="puzzle1-title">Puzzle #1</h3>
+                    <p class="puzzle-text" id="puzzle1-text">Three switches outside a room control three bulbs inside. You can flip switches but can only enter the room once. How do you determine which switch controls which bulb?</p>
+                    <button class="solve-btn" id="solve-btn1">Show Solution</button>
+                    <div class="solution hidden" id="solution1">
+                        <p>Turn on the first switch for 5 minutes, then turn it off and turn on the second switch. Enter the room:</p>
+                        <ul>
+                            <li>On bulb = controlled by second switch</li>
+                            <li>Off but warm bulb = controlled by first switch</li>
+                            <li>Off and cold bulb = controlled by third switch</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="puzzle-card">
+                    <h3 id="puzzle2-title">Puzzle #2</h3>
+                    <p class="puzzle-text" id="puzzle2-text">You have two ropes that each burn for exactly 60 minutes, but not at a consistent rate. How can you measure exactly 45 minutes?</p>
+                    <button class="solve-btn" id="solve-btn2">Show Solution</button>
+                    <div class="solution hidden" id="solution2">
+                        <p>Light the first rope at both ends and the second rope at one end simultaneously. When the first rope burns out (after 30 minutes), light the other end of the second rope. It will burn out in 15 more minutes, totaling 45 minutes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user-puzzle">
+                <h3 id="create-title">Create Your Own Puzzle</h3>
+                <textarea placeholder="Enter your puzzle here..." class="puzzle-input" id="puzzle-input"></textarea>
+                <textarea placeholder="Enter the solution..." class="solution-input" id="solution-input"></textarea>
+                <button class="add-puzzle" id="add-puzzle">Add Puzzle</button>
+            </div>
+        </main>
+
+        <footer>
+            <p id="more-challenges">More challenges: 
+                <a href="#" class="footer-link" id="teaser-link">Brain Teasers</a> | 
+                <a href="#" class="footer-link" id="decision-link">Decision Making</a>
+            </p>
+            <p id="footer-text">Develop your critical thinking skills</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

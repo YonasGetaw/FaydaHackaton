@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Contest Challenge</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Math Contest</h1>
+            <h2 id="subtitle">Test Your Calculation Skills</h2>
+            <button id="language-toggle">አማርኛ / Amharic</button>
+        </header>
+
+        <main>
+            <div class="problem-container">
+                <div class="problem-card">
+                    <h3 id="problem-title">Problem #1</h3>
+                    <p id="problem-text">What is 15 × (7 + 3) - 25?</p>
+                    <input type="number" id="answer-input" placeholder="Enter your answer">
+                    <button id="submit-answer">Submit Answer</button>
+                    <div class="feedback hidden" id="feedback"></div>
+                </div>
+            </div>
+
+            <div class="timer-score">
+                <div class="timer">
+                    <span id="time-label">Time:</span>
+                    <span id="time">60</span>s
+                </div>
+                <div class="score">
+                    <span id="score-label">Score:</span>
+                    <span id="score">0</span>
+                </div>
+            </div>
+
+            <button id="next-problem" class="hidden">Next Problem</button>
+        </main>
+
+        <footer>
+            <p id="more-challenges">More challenges: 
+                <a href="#" class="footer-link" id="science-link">Science Quiz</a> | 
+                <a href="#" class="footer-link" id="spelling-link">Spelling Bee</a>
+            </p>
+            <p id="footer-text">Sharpen your mathematical thinking</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

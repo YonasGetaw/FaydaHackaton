@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Math Learning</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: #F0F9FF;
+            color: #2D3748;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Mode Selection */
+        #mode-container {
+            margin-top: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .mode-btn {
+            padding: 16px 24px;
+            font-size: 1.2rem;
+            background-color: #48BB78;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .mode-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Game Container */
+        #game-container {
+            background: white;
+            width: 90%;
+            max-width: 600px;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: none;
+        }
+
+        .game-title {
+            color: #2F855A;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        /* Question & Answers */
+        #question {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: #2D3748;
+        }
+
+        #answer-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .answer-btn {
+            padding: 15px;
+            font-size: 1.1rem;
+            background: #48BB78;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .answer-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Controls */
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .control-btn {
+            padding: 12px 24px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        #next-btn {
+            background: #2F855A;
+            color: white;
+        }
+
+        #reveal-btn {
+            background: #F6AD55;
+            color: white;
+        }
+
+        #back-btn {
+            background: #718096;
+            color: white;
+        }
+
+        /* Feedback */
+        #feedback {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            min-height: 24px;
+        }
+
+        @media (max-width: 768px) {
+            #answer-container {
+                grid-template-columns: 1fr;
+            }
+
+            .mode-btn {
+                width: 100%;
+                font-size: 1rem;
+            }
+
+            #game-container {
+                padding: 15px;
+            }
+
+            .game-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Mode Selection -->
+    <div id="mode-container">
+        <h1>Welcome to Math Learning!</h1>
+        <button class="mode-btn" id="learn-btn">Learn Numbers 0-20</button>
+        <button class="mode-btn" id="quiz-btn">Math Quiz</button>
+    </div>
+
+    <!-- Game Container -->
+    <div id="game-container">
+        <h2 class="game-title" id="game-title"></h2>
+        <div id="question-container">
+            <p id="question"></p>
+            <div id="answer-container"></div>
+        </div>
+        <div class="controls">
+            <button class="control-btn" id="back-btn">Back</button>
+            <button class="control-btn" id="reveal-btn">Reveal Answer</button>
+            <button class="control-btn" id="next-btn">Next</button>
+        </div>
+        <div id="feedback"></div>
+    </div>
+
+    <script>
+        // Game State
+        let currentMode = "";
+        let currentQuestionIndex = 0;
+        let currentDifficulty = 0;
+        const difficulties = ["simple", "medium", "hard"];
+        const numbers = Array.from({ length: 21 }, (_, i) => i);
+
+        const quizData = {
+            simple: [
+                { question: "2 + 3", answer: 5, options: [4, 5, 6, 7] },
+                { question: "5 - 2", answer: 3, options: [2, 3, 4, 5] },
+                { question: "2 × 2", answer: 4, options: [3, 4, 5, 6] },
+                { question: "6 ÷ 2", answer: 3, options: [2, 3, 4, 5] }
+            ],
+            medium: [
+                { question: "7 + 8", answer: 15, options: [14, 15, 16, 17] },
+                { question: "10 - 6", answer: 4, options: [3, 4, 5, 6] },
+                { question: "3 × 4", answer: 12, options: [10, 12, 14, 16] },
+                { question: "8 ÷ 2", answer: 4, options: [3, 4, 5, 6] }
+            ],
+            hard: [
+                { question: "12 + 15", answer: 27, options: [25, 26, 27, 28] },
+                { question: "20 - 9", answer: 11, options: [10, 11, 12, 13] },
+                { question: "6 × 3", answer: 18, options: [16, 17, 18, 19] },
+                { question: "24 ÷ 3", answer: 8, options: [7, 8, 9, 10] }
+            ]
+        };
+
+        // Event Listeners
+        document.getElementById('learn-btn').addEventListener('click', () => startGame('numbers'));
+        document.getElementById('quiz-btn').addEventListener('click', () => startGame('quiz'));
+        document.getElementById('back-btn').addEventListener('click', handleBack);
+        document.getElementById('next-btn').addEventListener('click', handleNext);
+        document.getElementById('reveal-btn').addEventListener('click', revealAnswer);
+
+        function startGame(mode) {
+            currentMode = mode;
+            document.getElementById('game-title').textContent = mode === 'numbers' 
+                ? 'Learn Numbers 0-20' 
+                : `Math Quiz (${difficulties[currentDifficulty].toUpperCase()})`;
+            
+            document.getElementById('mode-container').style.display = 'none';
+            document.getElementById('game-container').style.display = 'block';
+            loadContent();
+        }
+
+        function loadContent() {
+            const answerContainer = document.getElementById('answer-container');
+            answerContainer.innerHTML = '';
+            document.getElementById('feedback').textContent = '';
+            document.getElementById('next-btn').disabled = true;
+
+            if (currentMode === 'numbers') {
+                numbers.forEach(num => {
+                    const btn = document.createElement('button');
+                    btn.className = 'answer-btn';
+                    btn.textContent = num;
+                    btn.addEventListener('click', () => speakNumber(num));
+                    answerContainer.appendChild(btn);
+                });
+                document.getElementById('question').textContent = 'Click a number to hear it!';
+                document.getElementById('next-btn').style.display = 'none';
+                document.getElementById('reveal-btn').style.display = 'none';
+            } else {
+                loadQuizQuestion();
+                document.getElementById('next-btn').style.display = 'inline-block';
+                document.getElementById('reveal-btn').style.display = 'inline-block';
+            }
+        }
+
+        function loadQuizQuestion() {
+            const questions = quizData[difficulties[currentDifficulty]];
+            const question = questions[currentQuestionIndex];
+            
+            document.getElementById('question').textContent = `What is ${question.question}?`;
+            const answerContainer = document.getElementById('answer-container');
+            answerContainer.innerHTML = '';
+
+            question.options.sort(() => Math.random() - 0.5).forEach(option => {
+                const btn = document.createElement('button');
+                btn.className = 'answer-btn';
+                btn.textContent = option;
+                btn.addEventListener('click', () => checkAnswer(option === question.answer));
+                answerContainer.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(isCorrect) {
+            const feedback = document.getElementById('feedback');
+            feedback.textContent = isCorrect ? '🎉 Correct! Well done!' : '❌ Try again!';
+            feedback.style.color = isCorrect ? '#2F855A' : '#C53030';
+            
+            if (isCorrect) {
+                document.getElementById('next-btn').disabled = false;
+                speakText(feedback.textContent);
+            }
+        }
+
+        function revealAnswer() {
+            const questions = quizData[difficulties[currentDifficulty]];
+            const correctAnswer = questions[currentQuestionIndex].answer;
+            const answerButtons = document.querySelectorAll('.answer-btn');
+            
+            answerButtons.forEach(btn => {
+                if (Number(btn.textContent) === correctAnswer) {
+                    btn.style.backgroundColor = '#2F855A';
+                    btn.style.transform = 'scale(1.05)';
+                }
+            });
+            document.getElementById('feedback').textContent = `The correct answer is ${correctAnswer}`;
+        }
+
+        function handleBack() {
+            if (currentMode === 'numbers' || currentQuestionIndex === 0) {
+                document.getElementById('mode-container').style.display = 'block';
+                document.getElementById('game-container').style.display = 'none';
+            } else {
+                currentQuestionIndex--;
+                loadQuizQuestion();
+            }
+        }
+
+        function handleNext() {
+            const questions = quizData[difficulties[currentDifficulty]];
+            if (currentQuestionIndex < questions.length - 1) {
+                currentQuestionIndex++;
+            } else {
+                currentDifficulty = (currentDifficulty + 1) % difficulties.length;
+                currentQuestionIndex = 0;
+                document.getElementById('game-title').textContent = 
+                    `Math Quiz (${difficulties[currentDifficulty].toUpperCase()})`;
+            }
+            loadQuizQuestion();
+            document.getElementById('next-btn').disabled = true;
+        }
+
+        function speakNumber(num) {
+            speakText(num.toString());
+        }
+
+        function speakText(text) {
+            if (window.speechSynthesis) {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.pitch = 1.2;
+                utterance.rate = 0.9;
+                window.speechSynthesis.speak(utterance);
+            }
+        }
+    </script>
+</body>
+</html>

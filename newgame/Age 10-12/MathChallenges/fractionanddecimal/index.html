@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractions & Decimals</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fractions & Decimals</h1>
+        <p class="subtitle">For Ages 10-12</p>
+    </header>
+
+    <main>
+        <div class="lesson-container">
+            <div id="fractionLesson">
+                <h2>Converting Between Fractions and Decimals</h2>
+                <p>To convert a fraction to a decimal, divide the numerator by the denominator.</p>
+                <p>Example: <strong>3/4 = 0.75</strong></p>
+                <button class="next-btn" onclick="showPractice()">Practice Now</button>
+            </div>
+            <div id="fractionPractice" style="display:none;">
+                <p id="fractionQuestion"></p>
+                <input type="text" id="fractionAnswer" placeholder="Your answer...">
+                <button onclick="checkAnswer()">Submit</button>
+                <div id="fractionResult"></div>
+                <div id="fractionStats">
+                    <p>Score: <span id="fractionScore">0</span></p>
+                    <p>Questions: <span id="fractionCount">0</span>/5</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+       
+        <p><a href="../index.html" class="footer-link">Back to Main Menu</a></p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

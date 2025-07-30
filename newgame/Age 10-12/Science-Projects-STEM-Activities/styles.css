@@ -1,0 +1,96 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFFFF; /* White background */
+    color: #000000; /* Black text */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50; /* Green header */
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation buttons */
+nav {
+    margin: 20px 0;
+}
+
+nav button {
+    background-color: #4CAF50; /* Green buttons */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Content sections */
+.content {
+    display: none;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Active section */
+.content.active {
+    display: block;
+}
+
+/* Links (if added later) */
+a {
+    color: #4CAF50; /* Green links */
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #000000; /* Black on hover */
+}
+
+/* Quiz input boxes */
+input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50; /* Green buttons */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Images */
+img {
+    width: 60%;
+    border-radius: 10px;
+    margin: 10px 0;
+}

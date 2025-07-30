@@ -1,0 +1,125 @@
+:root {
+    --primary: #4CAF50;  /* Green */
+    --white: #FFFFFF;    /* White */
+    --black: #000000;    /* Black */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: var(--primary);
+    padding: 15px;
+    border-radius: 15px;
+    color: var(--white);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.rhymes-container {
+    display: grid;
+    gap: 20px;
+}
+
+.rhyme-card {
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid var(--primary);
+}
+
+.rhyme-card h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.rhyme-content {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.rhyme-content p {
+    margin-bottom: 10px;
+}
+
+.rhyme-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.play-btn, .stop-btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.play-btn:hover, .stop-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 15px;
+    color: var(--black);
+}
+
+.rhyme-link {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.rhyme-link:hover {
+    color: var(--black);
+}
+
+@media (min-width: 768px) {
+    .rhymes-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .rhymes-container {
+        grid-template-columns: 1fr;
+    }
+}

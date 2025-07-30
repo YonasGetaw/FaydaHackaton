@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity & Water Cycle - Kids Learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🔬 Fun Science - Electricity & Water Cycle ⚡💧</h1>
+    </header>
+
+    <nav>
+        <button onclick="showSection('electricity')">⚡ Electricity</button>
+        <button onclick="showSection('waterCycle')">💧 Water Cycle</button>
+        <button onclick="showSection('quiz')">📝 Quiz</button>
+    </nav>
+
+    <!-- Electricity Section -->
+    <section id="electricity" class="content">
+        <h2>⚡ What is Electricity?</h2>
+        <p>Electricity is the movement of electrons. It powers lights, phones, and even video games!</p>
+        <h3>🔋 Let's Build a Simple Circuit!</h3>
+        <img src="./circuit.png" alt="Simple Circuit Example">
+        <button onclick="showAlert('Great! Let’s make a circuit with a battery and LED!')">🔧 Start Experiment</button>
+    </section>
+
+    <!-- Water Cycle Section -->
+    <section id="waterCycle" class="content">
+        <h2>💧 The Water Cycle</h2>
+        <p>The water cycle moves water through evaporation, condensation, and precipitation.</p>
+        <h3>🌞 Let's See How It Works!</h3>
+        <img src="water-cycle.png" alt="Water Cycle Diagram">
+        <button onclick="showAlert('Awesome! Place a cup of water in the sun and watch what happens!')">🌊 Start Experiment</button>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="content">
+        <h2>📝 Science Quiz</h2>
+        <p>Test your knowledge! Answer these fun questions:</p>
+        <ul>
+            <li>1️⃣ What powers your TV? <input type="text" id="q1"></li>
+            <li>2️⃣ What is the first step in the water cycle? <input type="text" id="q2"></li>
+        </ul>
+        <button onclick="checkAnswers()">✅ Submit Answers</button>
+        <p id="quiz-result"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

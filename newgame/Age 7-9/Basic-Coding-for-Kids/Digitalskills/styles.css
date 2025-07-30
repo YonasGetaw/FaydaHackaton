@@ -1,0 +1,150 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3e8e41;
+}
+
+#langBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.progress {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 10%;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+
+.question {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.option {
+    padding: 15px;
+    background-color: white;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: left;
+}
+
+.option:hover {
+    background-color: #e8f5e9;
+}
+
+.option.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.option.correct {
+    background-color: #8bc34a;
+    color: white;
+}
+
+.option.wrong {
+    background-color: #f44336;
+    color: white;
+}
+
+.result {
+    min-height: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.control-btn {
+    width: 120px;
+}
+
+.score-container {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#prevBtn {
+    background-color: #2196F3;
+}
+
+#nextBtn {
+    background-color: #4CAF50;
+}
+
+#nextBtn.hidden, #prevBtn.hidden {
+    display: none;
+}

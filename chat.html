@@ -1,0 +1,52 @@
+<body>
+    
+    
+    <header class="site-header" style="background-color: #4CAF50; border-radius: 0%; padding: 10px; display: flex; align-items: center; justify-content: space-between; color: white;">
+
+        <div class="logo-placeholder">
+    
+            <img src="new logo.png" alt="Ethiopis Logo" width="150" height="60" loading="lazy"/>
+    
+        </div>
+    
+        <nav class="main-nav" aria-label="Main navigation" style="display: flex; gap: 10px;">
+    
+            <button id="logout-button" data-i18n="nav.logout" style="background-color: white; color: #4CAF50; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-size: 16px;">Logout</button>
+    
+            <button id="language-toggle" class="language-toggle" aria-label="Toggle language" style="background-color: white; color: #4CAF50; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-size: 16px;">Back</button>
+    
+        </nav>
+    
+    </header>
+
+
+
+
+
+
+
+
+
+
+    <div style="background-color:#4CAF50; color: white; text-align: center; padding: 20px; font-family: Arial, sans-serif;">
+        &copy; 2025 ethiopis. All rights reserved.
+      </div>
+
+      <script>
+        // Handle language toggle button
+        document.getElementById('language-toggle').addEventListener('click', function () {
+          // Display a confirmation dialog
+          if (confirm('Are you sure you want to back?')) {
+            window.location.href = '../../../../age-4-6.html'; // Redirect to the age-4-6.html
+          }
+        });
+      
+        // Handle logout button
+        document.getElementById('logout-button').addEventListener('click', function () {
+          // Display a confirmation dialog
+          if (confirm('Are you sure you want to logout?')) {
+            window.location.href = '../../../../index.html'; // Redirect to the index.html
+          }
+        });
+      </script>
+</body>

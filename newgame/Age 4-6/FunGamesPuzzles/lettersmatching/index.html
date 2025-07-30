@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Matching</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔤 Letter Matching</h1>
+            <div class="game-info">
+                <span>Matches: <span id="matches">0</span>/26</span>
+                <button id="reset-btn">🔄 Reset</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="game-area">
+                <div class="uppercase-letters">
+                    <!-- A-Z uppercase letters will be added here -->
+                </div>
+                <div class="lowercase-letters">
+                    <!-- a-z lowercase letters will be added here -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <audio id="correct-sound" src="https://www.soundjay.com/buttons/sounds/button-09.mp3"></audio>
+    <audio id="wrong-sound" src="https://www.soundjay.com/buttons/sounds/button-10.mp3"></audio>
+
+    <script src="./script.js"></script>
+</body>
+</html>

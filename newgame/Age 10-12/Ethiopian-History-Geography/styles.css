@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  padding: 1rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+nav button {
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: opacity 0.3s ease;
+}
+
+nav button:hover {
+  opacity: 0.9;
+}
+
+/* Content Sections */
+.content {
+  display: none;
+  background-color: #FFFFFF;
+  margin: 1rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content.active {
+  display: block;
+}
+
+/* History and Geography Sections */
+.history-section, .geo-section {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-left: 4px solid #4CAF50;
+  border-radius: 8px;
+}
+
+/* Interactive Elements */
+textarea, input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav button {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+  
+  .content {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav button {
+    flex: 1 1 100%;
+  }
+  
+  .history-section, .geo-section {
+    padding: 1rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+a {
+  color: #4CAF50;
+  text-decoration: underline;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethiopian Historical Events</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Ethiopian Historical Events</h1>
+            <h2 id="subtitle">Milestones of Our Past</h2>
+            <button id="language-toggle">አማርኛ / Amharic</button>
+        </header>
+
+        <main>
+            <div class="timeline">
+                <div class="event">
+                    <div class="event-date" id="event1-date">1270</div>
+                    <div class="event-content">
+                        <h3 id="event1-title">Solomonic Dynasty Begins</h3>
+                        <p id="event1-desc">Yekuno Amlak overthrows the Zagwe dynasty, claiming descent from King Solomon and Queen of Sheba.</p>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="event-date" id="event2-date">1896</div>
+                    <div class="event-content">
+                        <h3 id="event2-title">Battle of Adwa</h3>
+                        <p id="event2-desc">Ethiopia defeats Italian forces, becoming the first African nation to resist European colonialism.</p>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="event-date" id="event3-date">1936-1941</div>
+                    <div class="event-content">
+                        <h3 id="event3-title">Italian Occupation</h3>
+                        <p id="event3-desc">Brief period of Italian rule under Mussolini, ending with Ethiopian resistance and Allied support.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-container">
+                <h3 id="quiz-title">Historical Knowledge Test</h3>
+                <div class="question">
+                    <p id="q1-text">1. What was significant about the Battle of Adwa?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="a"> <span id="q1-option1">First African victory over European colonialists</span></label>
+                        <label><input type="radio" name="q1" value="b"> <span id="q1-option2">Marked the beginning of Italian rule</span></label>
+                        <label><input type="radio" name="q1" value="c"> <span id="q1-option3">Ended the Solomonic dynasty</span></label>
+                    </div>
+                </div>
+                <button class="submit-quiz" id="submit-quiz">Submit Answers</button>
+                <div class="results hidden" id="results">
+                    <div class="score">Score: <span id="score">0</span>/1</div>
+                    <div class="feedback" id="feedback"></div>
+                    <button class="retry-quiz" id="retry-quiz">Try Again</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p id="more-topics">More topics: 
+                <a href="#" class="footer-link" id="heritage-link">Cultural Heritage</a> | 
+                <a href="#" class="footer-link" id="regions-link">Ethiopian Regions</a>
+            </p>
+            <p id="footer-text">Understanding Ethiopia's historical journey</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

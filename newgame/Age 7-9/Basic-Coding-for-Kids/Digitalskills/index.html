@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Skills Quiz</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Digital Skills Quiz</h1>
+        <button id="langBtn" class="btn">በአማርኛ</button>
+    </header>
+
+    <main>
+        <div class="quiz-container">
+            <div class="progress">
+                <span id="progressText">Question 1 of 10</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+
+            <div class="question" id="question"></div>
+            
+            <div class="options" id="options"></div>
+            
+            <div class="result" id="result"></div>
+            
+            <div class="controls">
+                <button id="prevBtn" class="btn control-btn">Previous</button>
+                <button id="nextBtn" class="btn control-btn">Next</button>
+            </div>
+            
+            <div class="score-container">
+                <p id="scoreText">Score: 0/10</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>

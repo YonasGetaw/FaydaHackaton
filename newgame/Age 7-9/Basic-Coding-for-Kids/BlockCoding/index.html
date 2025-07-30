@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Coding Game</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Block Coding Game</h1>
+        <button id="langBtn" class="btn">በአማርኛ</button>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="blocks">
+                <div class="block" draggable="true" id="moveBlock">Move</div>
+                <div class="block" draggable="true" id="turnBlock">Turn</div>
+                <div class="block" draggable="true" id="jumpBlock">Jump</div>
+            </div>
+            
+            <div class="workspace" id="workspace">
+                <p id="dropHint">Drag blocks here to build your code!</p>
+            </div>
+            
+            <div class="character-area">
+                <div class="character" id="character">🤖</div>
+            </div>
+            
+            <button id="runBtn" class="btn run-btn">Run Code</button>
+            <button id="resetBtn" class="btn reset-btn">Reset</button>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>

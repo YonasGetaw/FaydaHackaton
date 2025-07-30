@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kids Learning App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Writing Section -->
+        <div class="writing-area">
+            <h2>Practice Spelling: <span id="currentWord">CAT</span></h2>
+            <p class="instruction">Hover the word to make it dance! ✨</p>
+            <canvas id="writingCanvas" width="500" height="300"></canvas><br>
+            <div class="button-group">
+                <button onclick="clearCanvas()">🧹 Clear</button>
+                <button onclick="changeWord()">⭐ Next Word</button>
+            </div>
+            <p class="instruction">Say the word out loud as you write! 🎉</p>
+        </div>
+    </div>
+
+    <!-- Confetti Elements -->
+    <div class="confetti" style="left:10%; animation-delay:0s"></div>
+    <div class="confetti" style="left:20%; animation-delay:0.5s; background:#2ECC71"></div>
+    <div class="confetti" style="left:30%; animation-delay:1s; background:#FFFFFF"></div>
+    <div class="confetti" style="left:40%; animation-delay:1.5s"></div>
+    <div class="confetti" style="left:50%; animation-delay:2s; background:#2ECC71"></div>
+    <div class="confetti" style="left:60%; animation-delay:2.5s"></div>
+    <div class="confetti" style="left:70%; animation-delay:3s; background:#FFFFFF"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

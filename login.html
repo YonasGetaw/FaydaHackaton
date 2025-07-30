@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="title.login">Ethiopis - Login</title>
+
+  <!-- Favicon Links -->
+  <link rel="icon" type="image/x-icon" href="./images/favicon_io/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon_io/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./images/favicon_io/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+  <link rel="manifest" href="./images/favicon_io/site.webmanifest">
+
+  <!-- Preload important resources -->
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="js/script.js" as="script">
+  <link rel="preload" href="js/i18n.js" as="script">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo-placeholder">
+      <img src="./images/new logo.png" alt="Ethiopis Logo" width="150" height="60" loading="lazy"/>
+    </div>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="login.html" data-i18n="nav.login">Login</a>
+      <a href="register.html" data-i18n="nav.register">Register</a>
+      <button id="language-toggle" class="language-toggle" aria-label="Toggle language">EN | አማ</button>
+    </nav>
+    <button class="hamburger-menu" aria-label="Mobile menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Main Content -->
+  <main class="login-page">
+    <div class="login-container">
+      <div class="login-header">
+        <h1 data-i18n="login.title">Parent Login</h1>
+        <p data-i18n="login.subtitle">Access your account to manage your child's learning</p>
+      </div>
+
+      <form id="login-form" class="login-form">
+        <div class="form-group">
+          <label for="login-phone" data-i18n="login.phone">Phone Number</label>
+          <input type="tel" id="login-phone" name="phone" pattern="^(\+251|0)[79][0-9]{8}$" required>
+          <small class="error-message" data-i18n="login.phone_error">Please enter a valid Ethiopian phone number (e.g. +251911223344, +251711223344, 0911223344 or 0711223344)</small>
+        </div>
+        
+        <div class="form-group password-group">
+          <label for="login-password" data-i18n="login.password">Password</label>
+          <input type="password" id="login-password" name="password" required>
+          <small class="error-message" data-i18n="login.password_error">Please enter your password</small>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="login-button" data-i18n="login.submit">Login</button>
+          <p class="register-link">
+            <span data-i18n="login.no_account"></span>
+            <a href="register.html" data-i18n="login.register_link"></a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p data-i18n="footer.copyright">© 2025 Ethiopis. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/i18n.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

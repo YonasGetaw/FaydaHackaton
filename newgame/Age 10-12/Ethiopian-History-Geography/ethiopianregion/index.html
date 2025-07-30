@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethiopian Regions</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Ethiopian Regions</h1>
+            <h2 id="subtitle">Diversity in Unity</h2>
+            <button id="language-toggle">አማርኛ / Amharic</button>
+        </header>
+
+        <main>
+            <div class="region-container">
+                <div class="region-card">
+                    <div class="region-image" style="background-image: url('./Amhara.png')"></div>
+                    <h3 id="region1-title">Amhara Region</h3>
+                    <p class="region-description" id="region1-desc">Home to Lake Tana (source of Blue Nile) and Simien Mountains National Park.</p>
+                    <button class="show-capital" id="region1-btn">Show Capital</button>
+                    <p class="capital hidden" id="region1-capital">Capital: Bahir Dar</p>
+                </div>
+
+                <div class="region-card">
+                    <div class="region-image" style="background-image: url('./oromia.png')"></div>
+                    <h3 id="region2-title">Oromia Region</h3>
+                    <p class="region-description" id="region2-desc">Largest region by area, known for coffee production and Bale Mountains.</p>
+                    <button class="show-capital" id="region2-btn">Show Capital</button>
+                    <p class="capital hidden" id="region2-capital">Capital: Adama</p>
+                </div>
+
+                <div class="region-card">
+                    <div class="region-image" style="background-image: url('./image.png')"></div>
+                    <h3 id="region3-title">Tigray Region</h3>
+                    <p class="region-description" id="region3-desc">Historic region with ancient Axumite civilization and rock-hewn churches.</p>
+                    <button class="show-capital" id="region3-btn">Show Capital</button>
+                    <p class="capital hidden" id="region3-capital">Capital: Mekelle</p>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <h3 id="map-title">Ethiopia's Regional Map</h3>
+                <div class="map-placeholder">
+                    <p id="map-text">[Interactive map showing Ethiopia's regions would appear here] </p>
+                </div>
+                <button class="explore-btn" id="explore-btn">Explore Regions</button>
+            </div>
+        </main>
+
+        <footer>
+            <p id="more-topics">More topics: 
+                <a href="#" class="footer-link" id="heritage-link">Cultural Heritage</a> | 
+                <a href="#" class="footer-link" id="history-link">Historical Events</a>
+            </p>
+            <p id="footer-text">Celebrating Ethiopia's regional diversity</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

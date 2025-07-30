@@ -1,0 +1,118 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#langBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
+.game-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+}
+
+.character {
+    font-size: 60px;
+    margin: 20px 0;
+    transition: transform 0.3s;
+}
+
+.problem {
+    font-size: 32px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.problem input {
+    width: 60px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+.progress {
+    margin: 30px 0;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#progressBar {
+    width: 0%;
+    height: 100%;
+    background-color: #4CAF50;
+    transition: width 0.5s;
+}
+
+.progress p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.operations {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.op-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.op-btn.active {
+    background-color: #4CAF50;
+    color: white;
+}

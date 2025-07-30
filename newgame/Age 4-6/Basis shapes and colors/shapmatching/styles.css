@@ -1,0 +1,130 @@
+:root {
+    --primary: #4CAF50;
+    --white: #FFFFFF;
+    --black: #000000;
+    --shadow-sm: 0 2px 5px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    background-color: var(--white);
+    color: var(--black);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.app-header {
+    margin-bottom: 1.5rem;
+}
+
+.app-header h1 {
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.instruction {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    margin-bottom: 1rem;
+}
+
+.game-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.card {
+    width: 100%;
+    height: 100px;
+    background-color: var(--primary);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    font-size: 2.5rem;
+    color: var(--white);
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card .shape {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card.flipped {
+    background-color: var(--white);
+    border: 3px solid var(--primary);
+    color: var(--primary);
+}
+
+.card.flipped .shape {
+    opacity: 1;
+}
+
+.card.matched {
+    background-color: #e0f7fa;
+    cursor: default;
+}
+
+.reset-btn {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.5rem;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reset-btn:hover {
+    background-color: #3e8e41;
+}
+
+@media (max-width: 600px) {
+    .game-board {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .card {
+        height: 80px;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .game-board {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

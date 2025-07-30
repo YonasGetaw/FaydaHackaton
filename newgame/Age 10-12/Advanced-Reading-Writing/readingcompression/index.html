@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Comprehension</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="am">አማርኛ</button>
+            </div>
+            <h1 id="header-title">Reading Comprehension</h1>
+            <h2 id="header-subtitle">Improve Your Understanding Skills</h2>
+        </header>
+
+        <main>
+            <div class="level-selector">
+                <h3 id="level-title">Choose Your Level</h3>
+                <div class="level-buttons">
+                    <button class="level-btn active" data-level="beginner" data-en="Beginner" data-am="ጀማሪ">Beginner</button>
+                    <button class="level-btn" data-level="intermediate" data-en="Intermediate" data-am="መካከለኛ">Intermediate</button>
+                    <button class="level-btn" data-level="advanced" data-en="Advanced" data-am="ላቀ">Advanced</button>
+                </div>
+            </div>
+
+            <div class="passage-container">
+                <h3 id="passage-title">The Amazing Octopus</h3>
+                <div class="passage" id="passage-content">
+                    <p>Octopuses are fascinating sea creatures known for their intelligence and unique abilities. They have eight arms, three hearts, and blue blood. Unlike most creatures, they can change their skin color and texture to blend into their surroundings.</p>
+                    <p>These clever animals can solve puzzles, open jars, and even use tools. In laboratory tests, octopuses have shown remarkable problem-solving skills. They have short lifespans, typically living only 1-2 years, but during this time they learn quickly and adapt to their environment.</p>
+                    <p>Octopuses are also masters of escape. They can squeeze through tiny spaces, as their bodies have no bones. Some have been known to leave their tanks in aquariums to catch prey in nearby tanks before returning!</p>
+                </div>
+                <button class="hear-passage" data-en="Hear Passage" data-am="ግጥሙን ያድምጡ">Hear Passage</button>
+            </div>
+
+            <div class="questions-container">
+                <h3 id="questions-title">Comprehension Questions</h3>
+                <div class="question">
+                    <p id="q1-text">1. How many hearts does an octopus have?</p>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q1" value="a">
+                            <span id="q1-option-a">1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="b">
+                            <span id="q1-option-b">2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="q1" value="c">
+                            <span id="q1-option-c">3</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p id="q2-text">2. What special ability helps octopuses hide from predators?</p>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q2" value="a">
+                            <span id="q2-option-a">Changing color and texture</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="b">
+                            <span id="q2-option-b">Swimming very fast</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="q2" value="c">
+                            <span id="q2-option-c">Making loud noises</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p id="q3-text">3. What evidence shows that octopuses are intelligent?</p>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="q3" value="a">
+                            <span id="q3-option-a">They can solve puzzles and use tools</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="q3" value="b">
+                            <span id="q3-option-b">They have large eyes</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="q3" value="c">
+                            <span id="q3-option-c">They live in the ocean</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="check-answers" class="control-btn" data-en="Check Answers" data-am="መልሶችን ይፈትሹ">Check Answers</button>
+                <button id="reset-answers" class="control-btn" data-en="Reset" data-am="እንደገና ያስጀምሩ">Reset</button>
+                <button id="new-passage" class="control-btn" data-en="New Passage" data-am="አዲስ ግጥም">New Passage</button>
+            </div>
+
+            <div class="results hidden" id="results">
+                <h3 id="results-title">Your Results</h3>
+                <div class="score" id="score">Score: 0/3</div>
+                <div class="feedback" id="feedback"></div>
+                <div class="improvement-tips">
+                    <h4 id="tips-title">Tips to Improve</h4>
+                    <ul>
+                        <li id="tip1">Read the passage carefully before answering</li>
+                        <li id="tip2">Look back at the text to find evidence</li>
+                        <li id="tip3">Eliminate obviously wrong answers first</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p id="footer-text">More reading practice: 
+                <a href="#" class="footer-link" data-en="Science Articles" data-am="የሳይንስ ጽሑፎች">Science Articles</a> | 
+                <a href="#" class="footer-link" data-en="History Passages" data-am="የታሪክ መረጃዎች">History Passages</a>
+            </p>
+            <p id="footer-copyright">Made with ❤️ for young readers</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

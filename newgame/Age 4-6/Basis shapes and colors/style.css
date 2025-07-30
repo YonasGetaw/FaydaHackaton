@@ -1,0 +1,220 @@
+/* ===== Base Styles ===== */
+:root {
+  --primary: #2ECC71;  /* Vibrant green */
+  --white: #FFFFFF;    /* Pure white */
+  --black: #000000;    /* Pure black */
+  --shadow-sm: 0 2px 5px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Neue', cursive;
+  background-color: var(--white);
+  color: var(--black);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ===== App Structure ===== */
+.app-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.instruction {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--black);
+}
+
+/* ===== Shapes Section ===== */
+.shapes-section, .colors-section {
+  margin-bottom: 2.5rem;
+}
+
+.shapes-section h2, 
+.colors-section h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.shapes-grid, 
+.colors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+/* ===== Shape Styles ===== */
+.shape {
+  width: 100px;
+  height: 100px;
+  background-color: var(--white);
+  border: 3px solid var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Square - Default is square */
+.square {
+  /* Inherits base .shape styles */
+}
+
+/* Circle */
+.circle {
+  border-radius: 50%;
+}
+
+/* Triangle */
+.triangle {
+  background: transparent;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 90px solid var(--primary);
+}
+
+/* Rectangle */
+.rectangle {
+  width: 140px;
+  height: 80px;
+}
+
+/* Star */
+.star {
+  background: transparent;
+  border: none;
+}
+
+.star::before {
+  content: "★";
+  font-size: 80px;
+  color: var(--primary);
+  line-height: 1;
+}
+
+/* ===== Color Swatches ===== */
+.color-swatch {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Color Definitions */
+.red { background-color: #e53935; }
+.blue { background-color: #1e88e5; }
+.green { background-color: #43a047; }
+.yellow { background-color: #fdd835; }
+.orange { background-color: #fb8c00; }
+.purple { background-color: #8e24aa; }
+
+/* ===== Interactive States ===== */
+.shape:hover,
+.color-swatch:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-md);
+}
+
+.shape:active,
+.color-swatch:active {
+  transform: scale(1.05);
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  .shapes-grid, 
+  .colors-grid {
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 1rem;
+  }
+  
+  .shape {
+      width: 80px;
+      height: 80px;
+  }
+  
+  .rectangle {
+      width: 120px;
+      height: 70px;
+  }
+  
+  .triangle {
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-bottom: 70px solid var(--primary);
+  }
+  
+  .star::before {
+      font-size: 60px;
+  }
+  
+  .color-swatch {
+      width: 70px;
+      height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shapes-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .colors-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .shape {
+      width: 70px;
+      height: 70px;
+  }
+  
+  .rectangle {
+      width: 100px;
+      height: 60px;
+  }
+  
+  .triangle {
+      border-left: 35px solid transparent;
+      border-right: 35px solid transparent;
+      border-bottom: 60px solid var(--primary);
+  }
+  
+  .star::before {
+      font-size: 50px;
+  }
+  
+  .color-swatch {
+      width: 60px;
+      height: 60px;
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Kids Stories</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <h1>📚 Fun Time Stories & Rhymes</h1>
+    </header>
+
+    <div class="language-selector">
+        <button class="lang-button" data-lang="en">English</button>
+        <button class="lang-button" data-lang="am">አማርኛ</button>
+    </div>
+
+    <nav class="story-nav">
+        <button class="nav-button" data-section="story1">🐻 Three Bears</button>
+        <button class="nav-button" data-section="story2">🐇 Rabbit Adventure</button>
+        <button class="nav-button" data-section="rhyme1">🌟 Twinkle Star</button>
+    </nav>
+
+    <main class="content-area">
+        <section id="story1" class="story-section">
+            <h2 class="story-title">🐻 The Three Bears</h2>
+            <p class="story-text">
+                Once upon a time, there were three bears who lived in a cozy little house in the woods. 
+                There was a great big Papa Bear, a medium-sized Mama Bear, and a tiny little Baby Bear.
+            </p>
+            <p class="story-text">
+                One morning, Mama Bear made some yummy porridge, but it was too hot! They went for a walk while it cooled. 
+                Meanwhile, Goldilocks entered their house...
+            </p>
+            <img src="./bear.png" class="character draggable" alt="Bear family">
+        </section>
+
+        <section id="story2" class="story-section">
+            <h2 class="story-title">🐇 Rabbit's Adventure</h2>
+            <p class="story-text">
+                Once, there was a little rabbit named Pip. Pip loved to explore. One sunny morning, he decided to go on an adventure.
+            </p>
+            <p class="story-text">
+                Pip hopped through the tall green grass, met a butterfly, saw a shiny fish in a stream, and found a big, juicy carrot. 
+                After his fun adventure, he went home, happy and tired.
+            </p>
+            <img src="./rra.png" class="character draggable" alt="Bouncing rabbit">
+        </section>
+
+        <section id="rhyme1" class="story-section">
+            <h2 class="story-title">🌟 Twinkle Star</h2>
+            <p class="story-text">
+                High up in the dark night sky, there lived a little star named Twinkle. Twinkle loved to shine brightly.
+            </p>
+            <p class="story-text">
+                Every night, Twinkle would sparkle and bring joy. One night, she shone extra bright for a sad boy, making him smile.
+            </p>
+            <div class="star-animation"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

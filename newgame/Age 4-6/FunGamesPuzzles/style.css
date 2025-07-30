@@ -1,0 +1,196 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'Baloo Chettan 2', cursive;
+    background: #f0f9ff;
+    color: #2d3748;
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #4a5568;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-btn {
+    background: #48bb78;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav-btn.active {
+    background: #2f855a;
+    transform: scale(1.05);
+}
+
+.page {
+    flex: 1;
+    padding: 2rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page.active {
+    display: flex;
+}
+
+/* Home Page Styles */
+.welcome-screen {
+    text-align: center;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.bouncing-emoji {
+    font-size: 4rem;
+    margin: 2rem 0;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Coloring Page Styles */
+#drawing-canvas {
+    border: 3px solid #4a5568;
+    border-radius: 10px;
+    background: white;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    touch-action: none;
+}
+
+.color-palette {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.color-option {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #4a5568;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color-option.selected {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.tools {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.tools button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #48bb78;
+    color: white;
+    cursor: pointer;
+}
+
+/* Animals Game Styles */
+.animal-images, .animal-names {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.animal {
+    width: 100px;
+    height: 100px;
+    cursor: grab;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.name-box {
+    width: 100px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+    background: white;
+    border-radius: 10px;
+    border: 2px dashed #4a5568;
+}
+
+/* Shapes Game Styles */
+.shapes-container, .shape-outlines {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.shape {
+    width: 100px;
+    height: 100px;
+    cursor: grab;
+    background: #48bb78;
+}
+
+.circle { border-radius: 50%; }
+.square {
+    width: 100px;
+    height: 100px;
+ }
+.triangle { 
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: #f6ad55;
+}
+
+.outline {
+    width: 120px;
+    height: 120px;
+    border: 3px dashed #4a5568;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.feedback {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #48bb78;
+}
+
+@media (max-width: 768px) {
+    .game-nav { flex-wrap: wrap; }
+    .nav-btn { font-size: 0.9rem; padding: 0.6rem 1rem; }
+    #drawing-canvas { height: 400px; }
+    .animal, .name-box { width: 80px; height: 80px; }
+}

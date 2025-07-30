@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 Memory Game</h1>
+            <div class="game-info">
+                <span>Moves: <span id="moves">0</span></span>
+                <span>Pairs: <span id="pairs">0</span>/8</span>
+                <button id="reset-btn">🔄 Reset</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="memory-board" id="memoryBoard"></div>
+        </main>
+    </div>
+
+    <audio id="match-sound" src="https://www.soundjay.com/buttons/sounds/button-09.mp3"></audio>
+    <audio id="flip-sound" src="https://www.soundjay.com/buttons/sounds/button-10.mp3"></audio>
+
+    <script src="./script.js"></script>
+</body>
+</html>

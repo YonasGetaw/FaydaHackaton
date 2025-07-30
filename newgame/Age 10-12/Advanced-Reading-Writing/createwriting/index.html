@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Writing</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Creative Writing</h1>
+            <h2>Unlock Your Imagination!</h2>
+        </header>
+
+        <main>
+            <div class="writing-prompt">
+                <h3>Today's Writing Prompt</h3>
+                <div class="prompt-box">
+                    <p>Imagine you discover a hidden door in your school that leads to a magical world. Describe what you find and the adventures you have there.</p>
+                </div>
+                <div class="word-bank">
+                    <h4>Word Bank</h4>
+                    <div class="words">
+                        <span class="word-tag">mysterious</span>
+                        <span class="word-tag">enchanted</span>
+                        <span class="word-tag">portal</span>
+                        <span class="word-tag">adventure</span>
+                        <span class="word-tag">curious</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="writing-area">
+                <h3>Your Story</h3>
+                <textarea id="story-text" placeholder="Begin your creative story here..."></textarea>
+                <div class="writing-tools">
+                    <button id="save-story" class="tool-btn">Save</button>
+                    <button id="clear-story" class="tool-btn">Clear</button>
+                    <button id="read-aloud" class="tool-btn">Read Aloud</button>
+                    <div class="word-count">Words: <span id="count">0</span></div>
+                </div>
+            </div>
+
+            <div class="writing-tips">
+                <h3>Writing Tips</h3>
+                <ul>
+                    <li>Use descriptive language to paint a picture</li>
+                    <li>Show, don't tell - let actions reveal character</li>
+                    <li>Vary your sentence structure</li>
+                    <li>Include dialogue to bring characters to life</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>More activities: 
+                <a href="#" class="footer-link">Story Starters</a> | 
+                <a href="#" class="footer-link">Character Builder</a>
+            </p>
+            <p>Made with ❤️ for young writers</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

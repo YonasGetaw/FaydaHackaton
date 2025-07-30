@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethiopian Historical Figures - For Kids</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="main-title">Ethiopian Historical Figures</h1>
+        <button id="language-toggle" class="btn">አማርኛ</button>
+    </header>
+
+    <main>
+        <div class="figures-container">
+            <div class="figure-card" id="figure1">
+                <img src="./images/minilik.png" alt="Emperor Menelik II">
+                <h3 id="figure1-name">Emperor Menelik II</h3>
+                <p id="figure1-desc">He led Ethiopia to victory at the Battle of Adwa in 1896 against Italy. He modernized Ethiopia and built the first hospital and school.</p>
+                <button class="learn-more-btn" id="learn-more-1">Learn More</button>
+                <div class="info-box" id="info-box-1" style="display: none;">
+                    <p class="more-info" id="more-info-1">Emperor Menelik II (1844 – 1913) was Negus of Shewa from 1866 to 1889 and then Emperor of Ethiopia from 1889 to his death. He expanded the Ethiopian Empire to the south and east, leading Ethiopian forces to victory in the First Italo-Ethiopian War, notably at the Battle of Adwa.</p>
+                    <button class="close-btn" onclick="toggleInfo('figure1')">Close</button>
+                </div>
+            </div>
+            <div class="figure-card" id="figure2">
+                <img src="./images/taytu.png" alt="Empress Taytu">
+                <h3 id="figure2-name">Empress Taytu</h3>
+                <p id="figure2-desc">A strong leader who helped plan the strategy at Adwa. She founded Addis Ababa and was known for her intelligence and bravery.</p>
+                <button class="learn-more-btn" id="learn-more-2">Learn More</button>
+                <div class="info-box" id="info-box-2" style="display: none;">
+                    <p class="more-info" id="more-info-2">Empress Taytu Betul (c. 1851 – 1918) was the wife of Emperor Menelik II and a powerful political figure. She was instrumental in resisting Italian expansion and played a key role in the Battle of Adwa. Addis Ababa was reportedly founded at her suggestion.</p>
+                    <button class="close-btn" onclick="toggleInfo('figure2')">Close</button>
+                </div>
+            </div>
+            <div class="figure-card" id="figure3">
+                <img src="./images/haile.png" alt="Emperor Haile Selassie">
+                <h3 id="figure3-name">Emperor Haile Selassie</h3>
+                <p id="figure3-desc">The last emperor of Ethiopia. He helped create the Organization of African Unity and modernized Ethiopia's education system.</p>
+                <button class="learn-more-btn" id="learn-more-3">Learn More</button>
+                <div class="info-box" id="info-box-3" style="display: none;">
+                    <p class="more-info" id="more-info-3">Emperor Haile Selassie I (1892 – 1975) reigned from 1930 to 1974. He is revered by Rastafarians as the returned Messiah. He worked to modernize Ethiopia and was a key figure in the formation of the Organization of African Unity (OAU).</p>
+                    <button class="close-btn" onclick="toggleInfo('figure3')">Close</button>
+                </div>
+            </div>
+            <div class="figure-card" id="figure4">
+                <img src="./images/zewditu.png" alt="Empress Zewditu">
+                <h3 id="figure4-name">Empress Zewditu</h3>
+                <p id="figure4-desc">Ethiopia's first female head of state. She ruled during a time of change and was known for her kindness and devotion to the church.</p>
+                <button class="learn-more-btn" id="learn-more-4">Learn More</button>
+                <div class="info-box" id="info-box-4" style="display: none;">
+                    <p class="more-info" id="more-info-4">Empress Zewditu (1876 – 1930) was the Empress of Ethiopia from 1916 to 1930. She came to the throne after the deposition of her cousin, Lij Iyasu. Her reign was marked by the power struggle with the then Regent Ras Tafari Makonnen (later Emperor Haile Selassie I).</p>
+                    <button class="close-btn" onclick="toggleInfo('figure4')">Close</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p id="footer-text">Learn about great Ethiopian leaders!</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

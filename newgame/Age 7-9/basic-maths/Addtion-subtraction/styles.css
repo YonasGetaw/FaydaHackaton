@@ -1,0 +1,95 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#langBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
+.game-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.problem {
+    font-size: 32px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.problem input {
+    width: 60px;
+    height: 40px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+.score {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+#feedback {
+    min-height: 24px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.settings {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.settings label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.settings input {
+    width: 18px;
+    height: 18px;
+}

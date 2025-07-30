@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Multiplication Game</h1>
+        <button id="langBtn" class="btn">በአማርኛ</button>
+    </header>
+
+    <main>
+        <div class="game-container">
+            <div class="problem" id="problem">
+                <span id="num1">5</span>
+                <span>×</span>
+                <span id="num2">3</span>
+                <span>=</span>
+                <input type="number" id="answer" placeholder="?">
+            </div>
+
+            <div class="controls">
+                <button id="checkBtn" class="btn">Check</button>
+                <button id="newBtn" class="btn">New Problem</button>
+            </div>
+
+            <div class="score">
+                <p id="score">Score: 0</p>
+                <p id="feedback"></p>
+            </div>
+
+            <div class="difficulty">
+                <h3 id="difficultyLabel">Difficulty:</h3>
+                <select id="difficultySelect">
+                    <option value="easy">Easy (1-5)</option>
+                    <option value="medium">Medium (1-10)</option>
+                    <option value="hard">Hard (1-12)</option>
+                </select>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

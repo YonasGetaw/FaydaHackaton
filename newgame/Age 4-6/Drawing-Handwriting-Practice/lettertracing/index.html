@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Letter Tracing</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="tracing-area">
+            <h1>✏️ Letter Tracing</h1>
+            <p class="instruction">Trace the letters to practice writing!</p>
+            <div class="letter-selector">
+                <button onclick="changeLetter('A')">A</button>
+                <button onclick="changeLetter('B')">B</button>
+                <button onclick="changeLetter('C')">C</button>
+                <button onclick="changeLetter('D')">D</button>
+                <button onclick="changeLetter('E')">E</button>
+            </div>
+            <canvas id="tracingCanvas" width="500" height="300"></canvas><br>
+            <div class="button-group">
+                <button onclick="clearCanvas()">🧹 Clear</button>
+                <button onclick="changeLetter()">🔁 New Letter</button>
+            </div>
+            <p class="instruction">Say the letter sound as you trace!</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
