@@ -1,5 +1,5 @@
 # Ethiopis – Multilingual Kids Learning Platform
-##deploy in Netlify - https//:ethiopiskidslarningplatform.netlify.app
+**Live Demo:** [ethiopiskidslarningplatform.netlify.app](https://ethiopiskidslarningplatform.netlify.app)
 ## Contributors
 - Yonas Getaw  
   *Registered for Hackathon*  
